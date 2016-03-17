@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+html(lang="es")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+		link(rel="stylesheet", href="css/styles.css")
+		//-script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
+		script(src="https://code.jquery.com/jquery-latest.min.js")
+		script(src="js/scripts.js")
+
+		//-Add fancyBox
+		link(rel='stylesheet', href='js/source/jquery.fancybox.css?v=2.1.5', type='text/css', media='screen')
+		script(type='text/javascript', src='js/source/jquery.fancybox.pack.js?v=2.1.5')
+		//-Optionally add helpers - button, thumbnail and/or media
+		link(rel='stylesheet', href='js/source/helpers/jquery.fancybox-buttons.css?v=1.0.5', type='text/css', media='screen')
+		script(type='text/javascript', src='js/source/helpers/jquery.fancybox-buttons.js?v=1.0.5')
+		script(type='text/javascript', src='js/source/helpers/jquery.fancybox-media.js?v=1.0.6')
+		link(rel='stylesheet', href='js/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7', type='text/css', media='screen')
+		script(type='text/javascript', src='js/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7')
+
+		title Administrador Tresmontes Lucchetti
+	body
+		header.total
+			.ed-container
+				.ed-item.web-30
+					a.logo(href="#")
+						img(src="img/logo.png").logo
+				.ed-item.web-70
+					#contenedor
+						ul#menu
+							li
+								a(href='#') Inicio
+							li
+								a(href='#') Ganadores
+							li
+								a(href='#') Ingreso datos
+								ul.children
+									li
+										a(href='#') Agregar Cadenas
+									li
+										a(href='#') Agregar Salas
+									li
+										a(href='#') Agregar Supervisores
+									li
+										a(href='#') Agregar Agencias
+									li
+										a(href='#') Agregar Exhibiciones
+							li
+								a(href='#') Estadísticas
+								ul.children
+									li
+										a(href='#') Resumen por Cadena
+									li
+										a(href='#') Resumen por Región
+									li
+										a(href='#') Estadísticas Concursos
+									li
+										a(href='#') Fotos Supervisores
+									li
+										a(href='#') Fotos por Cadena
+									li
+										a(href='#') Visitas página Inicio
+									li
+										a(href='#') Visitas página Concurso
+
+							li
+								a(href='#') Concursos
+							li
+								a(href='#') Salas
+								ul.children
+									li
+										a(href='#') Fotos Válidas
+									li
+										a(href='#') Fotos No Válidas
+									li
+										a(href='#') Sin Fotos
+									li
+										a(href='#') Fotos Supervisores
+									li
+										a(href='#') Fotos por Cadena
+									li
+										a(href='#') Visitas página Inicio
+									li
+										a(href='#') Visitas página Concurso
+							li
+								a(href='#') Usuarios
+								ul.children
+									li
+										a(href='#') Usuarios
+									li
+										a(href='#') Buscar Usuario
+									li
+										a(href='#') Usuarios por Agencia
+									li
+										a(href='#') Fotos
+
+					#admin
+						#colorNav
+							ul
+								li.green
+									a(href='#') Administración
+									ul
+										li
+											a(href='#') Preferencias
+										li
+											a(href='#') Cambio clave
+										li
+											a(href='#') Cerrar Sesión
+
+		section
+			.ed-container
+				.ed-item.web-30
+					#titulo-section-fotos
+						h1 Agregar Exhibición
+				.ed-item.web-70
+					#datos__ADD
+						form#add
+							input(type="text", placeholder="Agregar exhibición")
+							input(type="submit", value="Grabar")
+		section
+			#add_cadena
+				.ed-container
+					.ed-item.web-30
+					.ed-item.web-70
+						table.add_table
+							thead
+								tr
+									th Código
+									th Exhibidor
+									th Mostrar
+									th Editar
+							tbody
+
+									tr.tr-center
+										td.td-padd: |1
+										td.td-padd Cabecera góndola
+										td.td-padd 
+											form#mostrar
+												select
+													option SI
+													option NO
+										td.td-padd 
+											a.various(href="#inline-edit").editar-datos 
+
+			#inline-edit
+				.ed-item.base-100
+					h1 Exhibidor 1
+					form#editalight
+						input(type="text" , value="Actualizar exhibidor")
+						.label
+							label Mostrar
+							select
+								option SI
+								option NO
+						input(type="submit", value="Actualizar")
+
+					
+
+
+
+
+
+
+						
+

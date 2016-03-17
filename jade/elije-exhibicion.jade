@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+html(lang="es")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+		link(rel="stylesheet", href="css/styles.css")
+		script(src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js")
+		script(src="js/scripts.js")
+
+		title
+	body
+		section.header
+			.brand.abcenter
+				img(src="img/logo.svg")
+		input#menu-button--checkbox.menu-button--checkbox(type='checkbox')
+		label.menu-button--label(for='menu-button--checkbox')
+			i.fa.fa-bars
+				img(src="img/sanwuich.svg")
+		nav.nav
+			a.nav__item(href='#') Inicio
+			a.nav__item(href='#') Secretaría
+			a.nav__item(href='#') Blog
+			a.nav__item(href='#') Contacto
+		section#content
+			.ed-container
+				.ed-item.base-100
+					#campanas
+						h1 Elige tu exhibición
+						.ed-item.base-100
+							form#seleccionCampana
+								select.green
+									option Cabecera
+									option Isla (1 pallet)
+									option Mini cabecera
+									option Mueble perimetral
+									option Payloder
+		//- footer.main-end.cross-end
+		//- 	p © 2015
+		//- 	img(src="img/footer.svg")
+
+
+
+
+		//- 		.ed-item.base-100
+		//- 			a.logo(href="index.html").interiores
+		//- 				img(src="img/logo.svg")
+		//- 			input#menu-button--checkbox.menu-button--checkbox(type='checkbox')
+		//- 			label.menu-button--label(for='menu-button--checkbox')
+		//- 				i.fa.fa-bars
+		//- 	nav.nav
+		//- 		a.nav__item(href='#') Inicio
+		//- 		a.nav__item(href='#') Secretaría
+		//- 		a.nav__item(href='#') Blog
+		//- 		a.nav__item(href='#') Contacto
+		//- section.main-w
+		//- 	h1 Participa y gana con tus exhibiciones

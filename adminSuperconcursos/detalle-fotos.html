@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="js/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen"/>
+    <script type="text/javascript" src="js/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <link rel="stylesheet" href="js/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen"/>
+    <script type="text/javascript" src="js/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="js/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+    <link rel="stylesheet" href="js/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen"/>
+    <script type="text/javascript" src="js/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    <title>Administrador Tresmontes Lucchetti</title>
+  </head>
+  <body>
+	  <header class="total">
+      <div class="ed-container">
+        <div class="ed-item web-30"><a href="#" class="logo"><img src="img/logo.png" class="logo"/></a></div>
+        <div class="ed-item web-70">
+          <div id="contenedor">
+		  <?php
+				include("menu.php");
+			?>
+          </div>
+          <div id="admin">
+            <?php
+				include("admin.php");
+			?>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="ed-container">
+        <div class="ed-item web-100">
+          <div id="titulo-section">
+            <h1>Foto Nº 19</h1>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="inline-detalle">
+      <div class="ed-container">
+        <div class="ed-item web-30">
+          <div id="img-salas-foto"><img src="img/img-salas/1019.jpg"/></div>
+        </div>
+        <div class="ed-item web-70">
+          <div id="caja-data">
+            <h3>Datos exhibición</h3>
+            <ul class="datos__exhibicion">
+              <li class="reponedor">Datos reponedor</li>
+              <li>Foto subida por: <span>
+                   
+                  Claudio patricio Silvestre Veliz</span></li>
+              <li>Mail: <span>claudio.psv@gmail.com</span></li>
+              <li>Cel: <span>86626239</span></li>
+              <li>Rut: <span>10408277-7</span></li>
+            </ul>
+          </div>
+          <div id="caja-data">
+            <h3>Datos internos</h3>
+            <ul style="margin:0.5em;" class="datos__exhibicion">
+              <li>Fecha: <span>
+                   
+                  04-12-2015</span></li>
+              <li>Jefe Grupo: <span>Ricardo Caro</span></li>
+              <li>Rut: <span>15506389-0</span></li>
+              <li>Supervisor: <span>Claudio Silvestre</span></li>
+              <li>Integrante 1: <span>Ricardo Caro</span></li>
+              <li>Integrante 1: <span>15506389-0</span></li>
+              <li>Rut Int. 1: <span>15506389-0</span></li>
+              <li>Exhibidor: <span>Cabecera góndola</span></li>
+            </ul>
+          </div>
+          <button type="button" class="back">Volver</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

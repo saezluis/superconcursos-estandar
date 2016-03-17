@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+html(lang="es")
+	head
+		meta(charset="UTF-8")
+		meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+		link(rel="stylesheet", href="css/styles.css")
+		//-script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js")
+		script(src="https://code.jquery.com/jquery-latest.min.js")
+		script(src="js/scripts.js")
+
+		//-Add fancyBox
+		link(rel='stylesheet', href='js/source/jquery.fancybox.css?v=2.1.5', type='text/css', media='screen')
+		script(type='text/javascript', src='js/source/jquery.fancybox.pack.js?v=2.1.5')
+		//-Optionally add helpers - button, thumbnail and/or media
+		link(rel='stylesheet', href='js/source/helpers/jquery.fancybox-buttons.css?v=1.0.5', type='text/css', media='screen')
+		script(type='text/javascript', src='js/source/helpers/jquery.fancybox-buttons.js?v=1.0.5')
+		script(type='text/javascript', src='js/source/helpers/jquery.fancybox-media.js?v=1.0.6')
+		link(rel='stylesheet', href='js/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7', type='text/css', media='screen')
+		script(type='text/javascript', src='js/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7')
+
+
+
+
+
+		title Administrador Tresmontes Lucchetti
+	body
+		header.total
+			.ed-container
+				.ed-item.web-30
+					a.logo(href="#")
+						img(src="img/logo.png").logo
+				.ed-item.web-70
+					#contenedor
+						ul#menu
+							li
+								a(href='#') Inicio
+							li
+								a(href='#') Ganadores
+							li
+								a(href='#') Ingreso datos
+								ul.children
+									li
+										a(href='#') Agregar Cadenas
+									li
+										a(href='#') Agregar Salas
+									li
+										a(href='#') Agregar Supervisores
+									li
+										a(href='#') Agregar Agencias
+									li
+										a(href='#') Agregar Exhibiciones
+							li
+								a(href='#') Estadísticas
+								ul.children
+									li
+										a(href='#') Resumen por Cadena
+									li
+										a(href='#') Resumen por Región
+									li
+										a(href='#') Estadísticas Concursos
+									li
+										a(href='#') Fotos Supervisores
+									li
+										a(href='#') Fotos por Cadena
+									li
+										a(href='#') Visitas página Inicio
+									li
+										a(href='#') Visitas página Concurso
+
+							li
+								a(href='#') Concursos
+							li
+								a(href='#') Salas
+								ul.children
+									li
+										a(href='#') Fotos Válidas
+									li
+										a(href='#') Fotos No Válidas
+									li
+										a(href='#') Sin Fotos
+									li
+										a(href='#') Fotos Supervisores
+									li
+										a(href='#') Fotos por Cadena
+									li
+										a(href='#') Visitas página Inicio
+									li
+										a(href='#') Visitas página Concurso
+							li
+								a(href='#') Usuarios
+								ul.children
+									li
+										a(href='#') Usuarios
+									li
+										a(href='#') Buscar Usuario
+									li
+										a(href='#') Usuarios por Agencia
+									li
+										a(href='#') Fotos
+
+					#admin
+						#colorNav
+							ul
+								li.green
+									a(href='#') Administración
+									ul
+										li
+											a(href='#') Preferencias
+										li
+											a(href='#') Cambio clave
+										li
+											a(href='#') Cerrar Sesión
+
+		section
+			.ed-container
+				.ed-item.web-30
+					#titulo-section-fotos
+						h1 Fotos / Ganadores
+				.ed-item.web-60
+					#menu-aux
+						ul.aux-menu
+							li
+								a(href="#", title="Descargar informe ganadores") Informe ganadores
+							li
+								a(href="#", title="Descargar informe no ganadores") Informe no ganadores
+							li
+								a(href="#", title="Descargar informe pendientes") Informe pendiente
+
+							form#find
+								h4 buscar foto
+								select
+									option Código foto
+									option Sala
+									option Fecha
+								input(type="search", placeholder="")
+								input(type="submit", buscar)
+
+				.ed-item.web-100
+					.tabla-concurso.no-padding
+						table.table
+							thead
+								tr.titulosBar
+									th Ver foto
+									th Sala
+									th TMLUC
+									th Cadena
+									th Fecha
+									th Estado Foto
+									th Mostrar
+									th Borrar
+							tbody
+								tr
+									td: a.various(href="#inline")
+											img(src="img/ver-foto.svg")
+									td EL 9 HUALAÑÉ
+									td OR072
+									td Otros
+									td 04-12-2015
+									td.loose NO GANADORA
+									td
+										form#selectorGanador
+											select
+												option si
+												option no
+									td 
+										a(href="#")
+											img(src="img/trash.svg")
+								tr
+									td: a.various(href="#inline")
+											img(src="img/ver-foto.svg")
+									td EL 9 HUALAÑÉ
+									td OR072
+									td Otros
+									td 04-12-2015
+									td.win NO GANADORA
+									td
+										form#selectorGanador
+											select
+												option si
+												option no
+									td 
+										a(href="#") 
+											img(src="img/trash.svg")
+								tr
+									td: a.various(href="#inline")
+											img(src="img/ver-foto.svg")
+									td EL 9 HUALAÑÉ
+									td OR072
+									td Otros
+									td 04-12-2015
+									td NO GANADORA
+									td
+										form#selectorGanador
+											select
+												option si
+												option no
+									td 
+										a(href="#") 
+											img(src="img/trash.svg")
+								tr
+									td: a(href="#")
+											img(src="img/ver-foto.svg")
+									td EL 9 HUALAÑÉ
+									td OR072
+									td Otros
+									td 04-12-2015
+									td NO GANADORA
+									td
+										form#selectorGanador
+											select
+												option si
+												option no
+									td 
+										a(href="#")
+											img(src="img/trash.svg")
+								tr
+									td: a.various(href="#inline")
+											img(src="img/ver-foto.svg")
+									td EL 9 HUALAÑÉ
+									td OR072
+									td Otros
+									td 04-12-2015
+									td NO GANADORA
+									td
+										form#selectorGanador
+											select
+												option si
+												option no
+									td 
+										a(href="#")
+											img(src="img/trash.svg")
+								tr
+									td: a.various(href="#inline")
+											img(src="img/ver-foto.svg")
+									td EL 9 HUALAÑÉ
+									td OR072
+									td Otros
+									td 04-12-2015
+									td NO GANADORA
+									td
+										form#selectorGanador
+											select
+												option si
+												option no
+									td 
+										a(href="#") 
+											img(src="img/trash.svg")
+		section.paginacion
+			.ed-container
+				.ed-item.base-100
+					ul
+						li: a.inicio(href="#") << Primero
+						li: a.activ-pager(href="#") 1
+						li: a(href="#") 2
+						li: a(href="#") 3
+						li: a(href="#") 4
+						li: a(href="#") 5
+						li: a(href="#") 6
+						li: a(href="#") 7
+						li: a(href="#") 8
+						li: a(href="#") 9
+						li: a(href="#") 10
+						li: a.final(href="#") Último >>
+						//-máximo 15 registros
+					#inline
+						.ed-item.base-100
+							h1 Foto nº
+								span 
+									| 019
+							.scary-monsters-1
+								.img-salas
+									img(src="img/img-salas/1019.jpg")
+							.scary-monsters
+								#caja-data
+									h3 Datos exhibición
+									ul.datos__exhibicion
+										li.reponedor Datos reponedor
+										li Foto subida por: 
+											span 
+												| Claudio patricio Silvestre Veliz
+										li Mail: 
+											span
+												| claudio.psv@gmail.com
+										li Cel: 
+											span
+												| 86626239
+										li Rut: 
+											span
+												| 10408277-7
+								#caja-data
+									h3 Datos internos
+									ul.datos__exhibicion(style="margin:0.5em;")
+										li Fecha: 
+											span 
+												| 04-12-2015
+										li Jefe Grupo: 
+											span
+												| Ricardo Caro
+										li Rut: 
+											span
+												| 15506389-0
+										li Supervisor: 
+											span
+												| Claudio Silvestre
+										li Integrante 1: 
+											span
+												| Ricardo Caro
+										li Integrante 1: 
+											span
+												| 15506389-0
+										li Rut Int. 1: 
+											span
+												| 15506389-0
+										li Exhibidor: 
+											span
+												| Cabecera góndola
+								a.revision(href="#") Revisar fotos
+
+
+
+
+
+						
+

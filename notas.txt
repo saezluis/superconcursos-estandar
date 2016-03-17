@@ -1,0 +1,59 @@
+<?
+
+notas:
+
+	Cuando el mercaderista inicia sesion ya se lo siguiente:
+		La cadena donde trabaja
+		La sala donde trabaja
+		
+		Porque son datos que ya tengo
+		
+	Si el mercaderista trabaja en una sala la informacion se carga de manera automatica
+	
+	Si el mercaderista trabaja en mas de una sala tiene que poder seleccionar la sala
+	
+	
+	Cuando yo registe un nuevo mercaderista le asigno la sala, con eso ya se la cadena en la cual trabaja
+	
+	
+	1 sala pueden trabajar 1 o varios mercaderistas
+	
+	//1 mercaderista puede trabajar en 1 o varias salas
+		
+	id_mercarderista	01		02			03
+	nombre				Luis	Triangulo	Carlos
+	rut - 123			1517	555			444
+	id_sala_01			01		01			03	
+	id_sala_02			02		-			-
+	id_sala_03			-		-			-
+	
+	
+	id_sala			01					02
+	nombre			Cochrane			Pajaritos
+	direccion		Lord Cochrane		Maipu
+	codigo TMLUC	333					444
+	comuna			Santiago Centro		Maipu
+	id_cadena		1					2
+	
+Gift cards Premio $10.000   Cantidad: 300
+Gift cards Premio $15.000    Cantidad: 100
+Gift cards Premio $25.000   Cantidad 100
+
+
+Pelotas de Fútbol brandeadas: 400
+Réplica de la camiseta de la selección: 50 
+Pechera Asados: 150
+Parrillas: 33
+
+1133 / 60 = 18
+
+guardo cada registro de ganador en una tabla con su 
+respectivo producto ganado	
+
+SuperConcursos le falta
+
+un boton con cerrar sesion
+
+mi Rut xD
+
+12982446-8

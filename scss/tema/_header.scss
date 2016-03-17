@@ -1,0 +1,181 @@
+
+body{
+	background:
+	url(../img/fot.png) center bottom no-repeat;
+	background-color:$rojo;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: 100%;
+    height: 100vh;
+	//background-image: url(../img/fot.png) no-repeat;
+    @include desde (web){
+    	background:
+    	url(../img/fot.png) center bottom no-repeat,
+    	url(../img/bg.jpg) no-repeat;
+    }
+}
+    #mano_tel{
+		position: absolute;
+		bottom: -5px;
+		left: 0px;
+		width: 35%;
+		@include desde (web){
+			width: 29%;
+		}
+    }
+    #caja {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		width: 400px;
+		height: 400px;
+		margin-top: -200px;
+		margin-left: -200px;
+		overflow:hidden;
+		//border: 1px solid #000;
+		//desde web
+		h1{
+			color:$blanco;
+			text-align: left;
+			font-size: 1.8em;
+			text-transform: uppercase;
+			width: 100%;
+			margin:0;
+			font-weight: $normal;
+		}
+		h2{
+			color:$blanco;
+			text-align: left;
+			font-size: 2.4em;
+			text-transform: uppercase;
+			width: 100%;
+			margin:0 0 0.5em 0;
+			font-weight: $normal;
+		}
+		ul.concept{
+			margin:0;
+			padding:0;
+			list-style: none;
+			li{
+				color:$blanco;
+				text-align: left;
+				font-size: 1.5em;
+				text-transform: uppercase;
+				width: 100%;
+				margin:0;
+				font-weight: $normal;
+				background:url(../img/check.png) no-repeat center left;
+				padding-left:28px;
+				margin-bottom: 0.25em;
+			}
+		}
+		p{
+			color:$blanco;
+			text-align:left;
+			font-size: 1.2em;
+			text-transform: uppercase;
+			margin:1em 0;
+		}
+		a{
+			background:$verde;
+			text-align: center;
+			color:$blanco;
+			padding: 10px;
+			width: 100%;
+			height: auto;
+			display: block;
+			text-transform: uppercase;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+			border:2px solid $blanco;
+			transition: .3s all;
+			&:hover{
+				background:$verde-hover;
+			}
+		}
+	}
+header{
+	width:100%;
+	a{
+		text-align: center;
+		display: block;
+		margin-top: 1em;
+	}
+	a.interiores{
+		img{
+			width: 35%;
+		}
+	}	
+}
+
+//formulario ingreso
+
+section#form{
+	width:100%;
+	padding:15px;
+	position:relative;
+	@include desde (web){
+		width: 60%;
+		margin: 0 auto;
+	}
+	@include desde (hd){
+		width: 42%;
+		margin: 0 auto;
+	}
+	h1{
+		color:$blanco;
+		text-align: center;
+		padding:0 30px;
+		margin:5px 0 25px 0;
+		font-weight: $normal;
+		@include desde (tablet){
+			font-size: 2.5em;
+		}
+	}
+	form{
+		width: 100%;
+		text-align: center;
+		input[type="text"],
+		input[type="password"]{
+			width: 100%;
+			padding:15px;
+			margin-bottom: 1em;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+			border:none;
+			-webkit-appearance:none;
+			-moz-appearance:none;
+			appearance:none;
+			@include desde (tablet){
+				padding:20px 30px;
+				width: 80%;
+				font-size: 1.2em;
+
+			}
+		}
+		input[type="submit"]{
+			width: 100%;
+			padding:10px;
+			background-color:$verde;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			border-radius: 5px;
+			border:2px solid $blanco;
+			color: $blanco;
+			font-size: 1.4em;
+			text-transform: uppercase;
+			font-family: $header--font-family;
+			cursor: pointer;
+			-webkit-appearance:none;
+			-moz-appearance:none;
+			appearance:none;
+			@include desde (tablet){
+				padding:20px;
+				width: 80%;
+			}
+		}
+
+	}
+}

@@ -1,0 +1,238 @@
+//botonera
+
+/* Estilos de la barra superior */
+.header {
+		overflow:hidden;
+		padding: 0.5rem;
+}
+
+.brand {
+		//line-height: 3rem;
+		width: 45%;
+		margin:0 auto;
+}
+
+/* Estilos del botón del menú */
+.menu-button--label {
+		position: absolute;
+		top: .5rem;
+		right: .5rem;
+		width: 1.5rem;
+		height: 1.5rem;
+		background: $rojo;
+		//border-radius: 3px;
+		//padding:0.4em;
+		cursor: pointer;
+		text-align: center;
+		line-height: 3rem;
+		font-size: 0.5em;
+		color: white;
+		transition: all .5s ease;
+}
+
+.menu-button--checkbox {
+		display: none;
+}
+
+/* Se desplaza el menú a la derecha y se fija */
+.menu-button--checkbox:checked ~ .nav {
+		right: 0;
+		position: fixed;
+}
+
+/* Se desplaza el botón a la derecha y se fija */
+.menu-button--checkbox:checked ~ .menu-button--label {
+		position: fixed;
+		right: 210px;
+}
+
+/* Se desplaza el contenido a la derecha */
+.menu-button--checkbox:checked ~ .main-w {
+		margin-left: -200px;
+}
+
+
+
+/* Estilos del menú y los items */
+.nav {
+		position: fixed;
+		top: 0;
+		right: -200px; /* Se oculta el menú a la derecha */
+		z-index: 10; /* Se le asigna un índice alto para que esté encima del contenido */
+		width: 200px;
+		height: 100vh;
+		padding-top: 3.5rem;
+		background-color: $verde;
+		border-left: 3px solid $blanco;
+		transition: all .5s ease; /* Desplazamiento del menú */
+}
+
+.nav__item {
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+		line-height: 3rem;
+		border-bottom: 1px solid hsla(180, 50%, 80%, 1);
+		background-color: transparent;
+		//font-family: Lato, sans-serif;
+		font-weight: 400;
+		text-align: center;
+		color: $blanco;
+		transition: all 1s ease;
+}
+
+.nav__item:hover {
+		background-color: hsla(180, 20%, 20%, 1);
+}
+
+
+
+/* Estilos del contenido */
+
+section#content{
+ 		height: 65vh;
+	h1{
+
+		color: $blanco;
+		font-size: 1.8em;
+		text-align: center;
+	}
+	form#seleccionCampana{
+			width: 100%;
+			margin-bottom: 2em;
+			text-align: center;
+			.item--seleccion{
+				width: 100%;
+				height: auto;
+				margin-bottom: 1em;
+				@include desde (web){
+					width: 47%;
+					float: left;
+					margin-right: 1.8em;
+
+				}
+			}
+			//paso 2
+			select{
+				background:$verde url(../img/arrow-down.svg);
+				border:2px solid $blanco;
+				background-repeat: no-repeat;
+				background-position: 95% center;
+				width: 100%;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				border-radius: 5px;
+				padding: 5px 10px;
+			 -webkit-appearance: none;
+			 -webkit-transition: all 0.4s;
+			 -moz-transition: all 0.4s;
+			 transition: all 0.4s;
+			 -webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+			 color: $blanco;
+			 font-size:1.5em;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			 font-family: 'Oswald', sans-serif;
+			 @include desde (tablet){
+				width: 60%;
+			 }
+			}
+
+			//paso 3
+			.ticket{
+				width: 100%;
+				position: relative;
+				text-align: center;
+				margin: 0 auto; 
+			 @include desde (tablet){
+				width: 60%;
+				margin:0 auto 4em auto;
+			 }
+
+			 #campo_info{
+					background:$verde;
+					border:2px solid $blanco;
+					width: 100%;
+					-webkit-border-radius: 5px;
+					-moz-border-radius: 5px;
+					border-radius: 5px;
+					padding: 5px 10px;
+					-webkit-appearance: none;
+					-webkit-transition: all 0.4s;
+					-moz-transition: all 0.4s;
+					transition: all 0.4s;
+					-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+					color: $blanco;
+					font-size:1.5em;
+					font-family: 'Oswald', sans-serif;
+					margin-bottom: 1em;
+					p{
+						margin:0;
+						text-align: left;
+						font-size: 1em;
+					}
+			 }
+
+				input[type="text"]{
+					background:$verde;
+					border:2px solid $blanco;
+					width: 100%;
+					-webkit-border-radius: 5px;
+					-moz-border-radius: 5px;
+					border-radius: 5px;
+					padding: 5px 10px;
+					-webkit-appearance: none;
+					-webkit-transition: all 0.4s;
+					-moz-transition: all 0.4s;
+					transition: all 0.4s;
+					-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+					color: $blanco;
+					font-size:1.5em;
+					font-family: 'Oswald', sans-serif;
+					margin-bottom: 1em;
+
+				}
+					.ok{
+						position:absolute;
+						top: 30%;
+						bottom:20%;
+						right: 5%;
+					}
+			}
+
+			div.upload {
+					width: 110px;
+					height:110px;
+					background: url(../img/camara.svg) no-repeat;
+					overflow: hidden;
+					display: block;
+					margin:0 auto;
+					&:hover{
+						opacity: 0.9;
+					} 
+			}
+
+			div.upload input {
+					display: block !important;
+					width: 110px !important;
+					height:110px !important;
+					opacity: 0 !important;
+					display: block;
+					overflow: hidden !important;
+			}
+			p{
+				color: $blanco;
+				text-align: center;
+				width: 100%;
+				margin-top: 0.5em;
+				font-size: 1.5em;
+			}
+	}
+	#campanas{
+		#good{
+			text-align: center;
+		}
+	}
+
+}

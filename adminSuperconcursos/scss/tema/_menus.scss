@@ -1,0 +1,378 @@
+nav{
+	width: 100%;
+	margin-top: 1em;
+	ul{
+		margin:0;
+		padding:0;
+		list-style: none;
+		li{
+			display: inline-block;
+			margin-right: 1em;
+			a{
+				color: $blanco;
+				&:hover{
+					border-bottom: 4px solid $verde;
+					transition: all 0.3s;
+				}
+			}
+		}
+	}
+}
+
+// nav.admin{
+// 	ul{
+// 		margin:0;
+// 		padding:0;
+// 		list-style: none;
+// 	}
+// }
+
+.relative{
+	position:relative;
+}
+
+#admin{
+	position: absolute;
+	//top: 0;
+	top: 15px;
+    right: 30px;
+    z-index: 5000;
+}
+
+#colorNav > ul > li{ /* will style only the top level li */
+	list-style: none;
+	//box-shadow: 0 0 10px rgba(100, 100, 100, 0.2) inset,1px 1px 1px #CCC;
+	display: inline-block;
+	line-height: 1;
+	margin: 1px;
+	//border-radius: 3px;
+	position:relative;
+}
+
+#colorNav > ul > li > a{
+	color:inherit;
+	text-decoration:none !important;
+	font-size:0.9em;
+}
+
+#colorNav li ul{
+	position:absolute;
+	list-style:none;
+	text-align:center;
+	width:180px;
+	left:50%;
+	margin-left:-110px;
+	top:20px;
+	font:bold 12px 'Open Sans Condensed', sans-serif;
+	
+	/* This is important for the show/hide CSS animation */
+	max-height:0px;
+	overflow:hidden;
+	
+	-webkit-transition:max-height 0.4s linear;
+	-moz-transition:max-height 0.4s linear;
+	transition:max-height 0.4s linear;
+}
+
+#colorNav li ul li{
+	background-color:$verde;
+}
+
+#colorNav li ul li a{
+	padding:12px;
+	color:#fff !important;
+	text-decoration:none !important;
+	display:block;
+}
+
+#colorNav li ul li:nth-child(odd){ /* zebra stripes */
+	background-color:$verde;
+}
+
+#colorNav li ul li:hover{
+	background-color:#41654F;
+}
+
+#colorNav li ul li:first-child{
+	//border-radius:3px 3px 0 0;
+	margin-top:15px;
+	position:relative;
+}
+
+#colorNav li ul li:first-child:before{ /* the pointer tip */
+	content:'';
+	position:absolute;
+	width:1px;
+	height:1px;
+	border:5px solid transparent;
+	border-bottom-color:$verde;
+	left:50%;
+	top:-10px;
+	margin-left:-5px;
+}
+
+#colorNav li ul li:last-child{
+	//border-bottom-left-radius:3px;
+	//border-bottom-right-radius:3px;
+}
+
+/* This will trigger the CSS */
+/* transition animation on hover */
+
+#colorNav li:hover ul{
+	max-height:200px; /* Increase when adding more dropdown items */
+}
+
+
+/*----------------------------
+	Color Themes
+-----------------------------*/
+
+
+#colorNav li.green{
+	background: url(../img/gear.png) no-repeat;
+	color:#fff;
+	padding-left: 20px;
+	fill:red;
+}
+
+#colorNav li.red{		background-color:#ea5080;color:#aa2a52;}
+#colorNav li.blue{		background-color:#53bfe2;color:#2884a2;}
+#colorNav li.yellow{	background-color:#f8c54d;color:#ab8426;}
+#colorNav li.purple{	background-color:#df6dc2;color:#9f3c85;}
+
+
+
+section{
+	#menu-aux{
+		margin-top: 2.4em;
+		width: 100%;
+		display: block;
+		
+		ul.aux-menu{
+			padding:0;
+			margin: 0;
+			list-style: none;
+			position: relative;
+			li{
+				display: inline-block;
+				margin-right: 1em;
+				&:last-child{
+					margin-right: 0;
+				}
+				
+				a{
+					color: #000;
+					background: url(../img/export.png) left center no-repeat;
+					padding-left: 2em;
+					font-size: 0.8em;
+					transition: .3s all;
+					&:hover{
+						color: $verde;
+					}
+				}
+			}
+		}
+		form#find{
+			position:absolute;
+			display: block;
+			width: 28%;
+			top: -8px;
+			right: -100px;
+			border-left: 1px solid $borde;
+			border-right: 1px solid $borde;
+			padding: 0 0.9em;
+
+			// background: $verde;
+			h4{
+				margin:0 0 0.3em 0;
+				font-size: 0.8em;
+			}
+			select{
+				border: 1px solid $verde;
+				padding: 0.4em;
+				width: 100%;
+				background: url(../img/arrow-down.png) no-repeat 97% center;
+			    -webkit-appearance: none;
+			    -moz-appearance: none;
+			    appearance: none;
+			    
+			}
+			input[type="search"],input[type="submit"]{
+				width: 100%;
+				display: none;
+			}
+		}
+	}
+
+}
+
+
+
+
+//menu desplegable bkn
+
+#contenedor {
+	//margin: 0px auto;
+	width: 100%;
+	height: 100%;
+	/* [disabled]background: #333333; */
+	text-align: center;
+	clear: both;
+	position: relative;
+}
+#contenedor h1 {
+	font: italic bold 36px Georgia, "Times New Roman", Times, serif;
+	color: #510500;
+	margin-top: 40px;
+	margin-bottom: 50px;
+	text-shadow:1px 1px 0 #ce4239;
+	-moz-text-shadow:1px 1px 0 #ce4239;
+	-webkit-text-shadow:1px 1px 0 #ce4239;
+}
+#contenedor ul {
+	text-align: left;
+	width: 100%;
+	//background: #252525;
+	margin: 12px 0 0 0;
+	padding: 0px 0px 0px 0px;
+	//border: 3px solid #1d1d1d;
+	list-style: none;
+	position: relative;
+	float:left;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+#contenedor ul li {
+	display: block;
+	float:left;
+	position: relative;
+}
+#contenedor ul li#buscador {
+	float: right;
+	position: relative;
+}
+#contenedor ul li a {/*Listas primer nivel*/
+	font: 0.9em "$body--font-family", sans-serif;
+	color: #fff;
+	text-decoration: none;
+	display: block;
+	float:left;
+	padding: 8px;
+}
+#contenedor ul li a:hover, #contenedor ul li a.active {/*Estado Hover/Activo de los enlaces*/
+	//background: #1d1d1d;
+	//color: #b11e15;
+	//font-weight: bold;
+}
+#contenedor ul li ul {/*Estilos de la lista secundaria*/
+	margin: 0px;
+	padding: 0px;
+	width: 150px;
+	height: 0;
+	float: left;
+	position: absolute;
+	left: 0px;
+	top: 43px;
+	border: 0;
+	opacity: 0;
+	filter: alpha(opacity=0); /* Internet Explorer*/
+	overflow: hidden;
+	//background: #1D1D1D;
+	z-index: -1;
+	border-radius: 0px 0px 5px 5px;
+	-moz-border-radius: 0px 0px 5px 5px;
+	-webkit-border-radius: 0px 0px 5px 5px;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	-moz-transition: all 0.3s ease-in-out 0s;
+	-ms-transition: all 0.3s ease-in-out 0s;
+	-o-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+#contenedor ul li ul.children li a{
+	color: #fff !important;
+	//padding: 13px 0 13px 20px;
+	min-width: 130px;
+	width: 170px;
+	border-bottom: 1px solid #fff;
+	//background: url(img/arrow-normal.png) no-repeat 7px center !important;
+	background: rgba($verde,1);
+	font-size: 0.8em;
+	
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+#contenedor ul li ul li:last-child a{border-bottom:none !important;}
+#contenedor ul li ul li a:hover{
+	color: #fff !important;
+	//font-weight: bold;
+	//padding-left:28px;
+	background: $verde-hover;
+}
+
+
+#contenedor ul li:hover ul.children{height:250px;opacity:1; z-index: 4000;}
+
+// #contenedor ul#menu:after {
+// 	/* Posiciona la sobora por detras del color de la caja*/
+// 	z-index: -1;
+// 	position: absolute;
+// 	/* no aplico ningún contenidos HTML */
+// 	content: "";
+// 	/* posiciona la sombra con respecto al derecho y superior */
+// 	right: 10px;
+// 	top: 45%;
+// 	/* configura el ancho */
+// 	width: 48%;
+// 	height: 20px;
+// 	/* color de fondo */
+// 	background: #000000;
+// 	/* definicion de la sombra estandar para box-shadow */
+// 	box-shadow: 0 0 8px 7px rgba(0, 0, 0, 0.7);
+// 	-moz-box-shadow: 0 0 8px 7px rgba(0, 0, 0, 0.7);
+// 	-webkit-box-shadow: 0 0 8px 7px rgba(0, 0, 0, 0.7);
+// 	/* rotacion de la sombra */
+// 	-webkit-transform: rotate(2deg);
+// 	-moz-transform: rotate(2deg);
+// 	-o-transform: rotate(2deg);
+// 	-ms-transform: rotate(2deg);
+// 	transform: rotate(2deg);
+// }
+// #contenedor ul#menu:before{
+// 	/* Posiciona la sobora por detras del color de la caja*/
+// 	z-index: -1;
+// 	position: absolute;
+// 	/* no aplico ningún contenidos HTML */
+// 	content: "";
+// 	/* posiciona la sombra con respecto al izquierdo y superior */
+// 	left: 10px;
+// 	top: 45%;
+// 	/* configura el ancho */
+// 	width: 50%;
+// 	height: 20px;
+// 	/* color de fondo */
+// 	background: #000000;
+// 	/* definicion de la sombra estandar para box-shadow */
+// 	box-shadow: 0 0 8px 7px rgba(0, 0, 0, 0.7);
+// 	-moz-box-shadow: 0 0 8px 7px rgba(0, 0, 0, 0.7);
+// 	-webkit-box-shadow: 0 0 8px 7px rgba(0, 0, 0, 0.7);
+// 	/* rotacion de la sombra */
+// 	-webkit-transform: rotate(-2deg);
+// 	-moz-transform: rotate(-2deg);
+// 	-o-transform: rotate(-2deg);
+// 	-ms-transform: rotate(-2deg);
+// 	transform: rotate(-2deg);
+// }
+#contenedor ul li ul#menu:before,#contenedor ul li ul#menu:after{visibility:hidden;}
+
+

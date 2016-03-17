@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="js/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen"/>
+    <script type="text/javascript" src="js/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    <link rel="stylesheet" href="js/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen"/>
+    <script type="text/javascript" src="js/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="js/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+    <link rel="stylesheet" href="js/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen"/>
+    <script type="text/javascript" src="js/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    <title>Administrador Tresmontes Lucchetti</title>
+  </head>
+  <body>
+    <header class="total">
+      <div class="ed-container">
+        <div class="ed-item web-30"><a href="#" class="logo"><img src="img/logo.png" class="logo"/></a></div>
+        <div class="ed-item web-70">
+          <div id="contenedor">
+            <ul id="menu">
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Revisar fotos</a></li>
+              <li><a href="#">Ingreso datos</a>
+                <ul class="children">
+                  <li><a href="#">Agregar Cadenas</a></li>
+                  <li><a href="#">Agregar Salas</a></li>
+                  <li><a href="#">Agregar Supervisores</a></li>
+                  <li><a href="#">Agregar Agencias</a></li>
+                  <li><a href="#">Agregar Exhibiciones</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Estadísticas</a>
+                <ul class="children">
+                  <li><a href="#">Resumen por Cadena</a></li>
+                  <li><a href="#">Resumen por Región</a></li>
+                  <li><a href="#">Estadísticas Concursos</a></li>
+                  <li><a href="#">Fotos Supervisores</a></li>
+                  <li><a href="#">Fotos por Cadena</a></li>
+                  <li><a href="#">Visitas página Inicio</a></li>
+                  <li><a href="#">Visitas página Concurso</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Concursos</a></li>
+              <li><a href="#">Salas</a>
+                <ul class="children">
+                  <li><a href="#">Fotos Válidas</a></li>
+                  <li><a href="#">Fotos No Válidas</a></li>
+                  <li><a href="#">Sin Fotos</a></li>
+                  <li><a href="#">Fotos Supervisores</a></li>
+                  <li><a href="#">Fotos por Cadena</a></li>
+                  <li><a href="#">Visitas página Inicio</a></li>
+                  <li><a href="#">Visitas página Concurso</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Usuarios</a>
+                <ul class="children">
+                  <li><a href="#">Usuarios</a></li>
+                  <li><a href="#">Buscar Usuario</a></li>
+                  <li><a href="#">Usuarios por Agencia</a></li>
+                  <li><a href="#">Fotos</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Informes</a>
+                <ul class="children">
+                  <li><a href="#" title="Descargar informe ganadores">Informe ganadores</a></li>
+                  <li><a href="#" title="Descargar informe no ganadores">Informe no ganadores</a></li>
+                  <li><a href="#" title="Descargar informe pendientes">Informe pendiente</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Buscar</a></li>
+            </ul>
+          </div>
+          <div id="admin">
+            <div id="colorNav">
+              <ul>
+                <li class="green"><a href="#">Administración</a>
+                  <ul>
+                    <li><a href="#">Preferencias</a></li>
+                    <li><a href="#">Cambio clave</a></li>
+                    <li><a href="#">Cerrar Sesión</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="ed-container">
+        <div class="ed-item web-30">
+          <div id="titulo-section-fotos">
+            <h1>Fotos por sala y concurso</h1>
+          </div>
+        </div>
+        <div class="ed-item web-70">
+          <div id="datos__concurso">
+            <ul>
+              <li class="item__info__concurso">Sala: <span>Independencia</span></li>
+              <li class="item__info__concurso">TMLUC: <span>A3080</span></li>
+              <li class="item__info__concurso">Dirección: <span>Independencia 4154</span></li>
+              <li class="item__info__concurso">Comuna: <span>Conchalí</span></li>
+              <li class="item__info__concurso">Cadena: <span>Alvi</span></li>
+            </ul>
+          </div>
+          <form id="corregirSala">
+            <p>Corregir Sala</p>
+            <select>
+              <option>Seleccionar</option>
+              <option> </option>
+              <option></option>
+            </select>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section id="sala-foto">
+      <div class="ed-container">
+        <div class="ed-item web-100">
+          <div id="all">
+            <div class="ed-container">
+              <div class="ed-item web-30">
+                <div id="foto-sala"><a href="#inline" class="various"><img src="img/img-salas/1019.jpg"/></a></div>
+              </div>
+              <div class="ed-item web-70">
+                <form id="sala-concurso">
+                  <div class="ed-container">
+                    <div class="ed-item web-50">
+                      <p>Fecha: <span>03-12-2015</span></p>
+                      <label>Concurso</label>
+                      <select class="select">
+                        <option>Luchetti Teletón</option>
+                      </select>
+                      <label>Estado de foto</label>
+                      <select class="select">
+                        <option>No Revisada</option>
+                        <option>Ganadora</option>
+                        <option>No Ganadora</option>
+                        <option>Pendiente</option>
+                      </select>
+                      <label>Mostrar</label>
+                      <select class="select">
+                        <option>SI</option>
+                        <option>NO</option>
+                      </select>
+                    </div>
+                    <div class="ed-item web-50">
+                      <label>Premio</label>
+                      <input type="number" class="input"/>
+                      <label>Observaciones</label>
+                      <textarea class="text-area"></textarea>
+                      <div id="here_comes_to_night">
+                        <input type="submit" value="Grabar"/>
+                        <button type="button"></button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ed-container">
+        <div class="ed-item web">
+          <h1 style="padding: 0em 0em 0.6em 0.5em; font-size:1.5em;">Otras fotos</h1>
+          <div id="all">
+            <div class="ed-container">
+              <div class="ed-item web-30">
+                <div id="foto-sala"><a href="#inline" class="various"><img src="img/img-salas/1019.jpg"/></a></div>
+              </div>
+              <div class="ed-item web-70">
+                <form id="sala-concurso">
+                  <div class="ed-container">
+                    <div class="ed-item web-50">
+                      <p>Fecha: <span>03-12-2015</span></p>
+                      <label>Concurso</label>
+                      <select class="select">
+                        <option>Luchetti Teletón</option>
+                      </select>
+                      <label>Estado de foto</label>
+                      <select class="select">
+                        <option>No Revisada</option>
+                        <option>Ganadora</option>
+                        <option>No Ganadora</option>
+                        <option>Pendiente</option>
+                      </select>
+                      <label>Mostrar</label>
+                      <select class="select">
+                        <option>SI</option>
+                        <option>NO</option>
+                      </select>
+                    </div>
+                    <div class="ed-item web-50">
+                      <label>Premio</label>
+                      <input type="number" class="input"/>
+                      <label>Observaciones</label>
+                      <textarea class="text-area"></textarea>
+                      <div id="here_comes_to_night">
+                        <input type="submit" value="Grabar"/>
+                        <button type="button"></button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div id="all">
+            <div class="ed-container">
+              <div class="ed-item web-30">
+                <div id="foto-sala"><a href="#inline" class="various"><img src="img/img-salas/1019.jpg"/></a></div>
+              </div>
+              <div class="ed-item web-70">
+                <form id="sala-concurso">
+                  <div class="ed-container">
+                    <div class="ed-item web-50">
+                      <p>Fecha: <span>03-12-2015</span></p>
+                      <label>Concurso</label>
+                      <select class="select">
+                        <option>Luchetti Teletón</option>
+                      </select>
+                      <label>Estado de foto</label>
+                      <select class="select">
+                        <option>No Revisada</option>
+                        <option>Ganadora</option>
+                        <option>No Ganadora</option>
+                        <option>Pendiente</option>
+                      </select>
+                      <label>Mostrar</label>
+                      <select class="select">
+                        <option>SI</option>
+                        <option>NO</option>
+                      </select>
+                    </div>
+                    <div class="ed-item web-50">
+                      <label>Premio</label>
+                      <input type="number" class="input"/>
+                      <label>Observaciones</label>
+                      <textarea class="text-area"></textarea>
+                      <div id="here_comes_to_night">
+                        <input type="submit" value="Grabar"/>
+                        <button type="button"></button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div id="all">
+            <div class="ed-container">
+              <div class="ed-item web-30">
+                <div id="foto-sala"><a href="#inline" class="various"><img src="img/img-salas/1019.jpg"/></a></div>
+              </div>
+              <div class="ed-item web-70">
+                <form id="sala-concurso">
+                  <div class="ed-container">
+                    <div class="ed-item web-50">
+                      <p>Fecha: <span>03-12-2015</span></p>
+                      <label>Concurso</label>
+                      <select class="select">
+                        <option>Luchetti Teletón</option>
+                      </select>
+                      <label>Estado de foto</label>
+                      <select class="select">
+                        <option>No Revisada</option>
+                        <option>Ganadora</option>
+                        <option>No Ganadora</option>
+                        <option>Pendiente</option>
+                      </select>
+                      <label>Mostrar</label>
+                      <select class="select">
+                        <option>SI</option>
+                        <option>NO</option>
+                      </select>
+                    </div>
+                    <div class="ed-item web-50">
+                      <label>Premio</label>
+                      <input type="number" class="input"/>
+                      <label>Observaciones</label>
+                      <textarea class="text-area"></textarea>
+                      <div id="here_comes_to_night">
+                        <input type="submit" value="Grabar"/>
+                        <button type="button"></button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div id="all">
+            <div class="ed-container">
+              <div class="ed-item web-30">
+                <div id="foto-sala"><a href="#inline" class="various"><img src="img/img-salas/1019.jpg"/></a></div>
+              </div>
+              <div class="ed-item web-70">
+                <form id="sala-concurso">
+                  <div class="ed-container">
+                    <div class="ed-item web-50">
+                      <p>Fecha: <span>03-12-2015</span></p>
+                      <label>Concurso</label>
+                      <select class="select">
+                        <option>Luchetti Teletón</option>
+                      </select>
+                      <label>Estado de foto</label>
+                      <select class="select">
+                        <option>No Revisada</option>
+                        <option>Ganadora</option>
+                        <option>No Ganadora</option>
+                        <option>Pendiente</option>
+                      </select>
+                      <label>Mostrar</label>
+                      <select class="select">
+                        <option>SI</option>
+                        <option>NO</option>
+                      </select>
+                    </div>
+                    <div class="ed-item web-50">
+                      <label>Premio</label>
+                      <input type="number" class="input"/>
+                      <label>Observaciones</label>
+                      <textarea class="text-area"></textarea>
+                      <div id="here_comes_to_night">
+                        <input type="submit" value="Grabar"/>
+                        <button type="button"></button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div id="all">
+            <div class="ed-container">
+              <div class="ed-item web-30">
+                <div id="foto-sala"><a href="#inline" class="various"><img src="img/img-salas/1019.jpg"/></a></div>
+              </div>
+              <div class="ed-item web-70">
+                <form id="sala-concurso">
+                  <div class="ed-container">
+                    <div class="ed-item web-50">
+                      <p>Fecha: <span>03-12-2015</span></p>
+                      <label>Concurso</label>
+                      <select class="select">
+                        <option>Luchetti Teletón</option>
+                      </select>
+                      <label>Estado de foto</label>
+                      <select class="select">
+                        <option>No Revisada</option>
+                        <option>Ganadora</option>
+                        <option>No Ganadora</option>
+                        <option>Pendiente</option>
+                      </select>
+                      <label>Mostrar</label>
+                      <select class="select">
+                        <option>SI</option>
+                        <option>NO</option>
+                      </select>
+                    </div>
+                    <div class="ed-item web-50">
+                      <label>Premio</label>
+                      <input type="number" class="input"/>
+                      <label>Observaciones</label>
+                      <textarea class="text-area"></textarea>
+                      <div id="here_comes_to_night">
+                        <input type="submit" value="Grabar"/>
+                        <button type="button"></button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div id="all">
+            <div class="ed-container">
+              <div class="ed-item web-30">
+                <div id="foto-sala"><a href="#inline" class="various"><img src="img/img-salas/1019.jpg"/></a></div>
+              </div>
+              <div class="ed-item web-70">
+                <form id="sala-concurso">
+                  <div class="ed-container">
+                    <div class="ed-item web-50">
+                      <p>Fecha: <span>03-12-2015</span></p>
+                      <label>Concurso</label>
+                      <select class="select">
+                        <option>Luchetti Teletón</option>
+                      </select>
+                      <label>Estado de foto</label>
+                      <select class="select">
+                        <option>No Revisada</option>
+                        <option>Ganadora</option>
+                        <option>No Ganadora</option>
+                        <option>Pendiente</option>
+                      </select>
+                      <label>Mostrar</label>
+                      <select class="select">
+                        <option>SI</option>
+                        <option>NO</option>
+                      </select>
+                    </div>
+                    <div class="ed-item web-50">
+                      <label>Premio</label>
+                      <input type="number" class="input"/>
+                      <label>Observaciones</label>
+                      <textarea class="text-area"></textarea>
+                      <div id="here_comes_to_night">
+                        <input type="submit" value="Grabar"/>
+                        <button type="button"></button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div id="all">
+            <div class="ed-container">
+              <div class="ed-item web-30">
+                <div id="foto-sala"><a href="#inline" class="various">									<img src="img/img-salas/1019.jpg"/></a></div>
+              </div>
+              <div class="ed-item web-70">
+                <form id="sala-concurso">
+                  <div class="ed-container">
+                    <div class="ed-item web-50">
+                      <p>Fecha: <span>03-12-2015</span></p>
+                      <label>Concurso</label>
+                      <select class="select">
+                        <option>Luchetti Teletón</option>
+                      </select>
+                      <label>Estado de foto</label>
+                      <select class="select">
+                        <option>No Revisada</option>
+                        <option>Ganadora</option>
+                        <option>No Ganadora</option>
+                        <option>Pendiente</option>
+                      </select>
+                      <label>Mostrar</label>
+                      <select class="select">
+                        <option>SI</option>
+                        <option>NO</option>
+                      </select>
+                    </div>
+                    <div class="ed-item web-50">
+                      <label>Premio</label>
+                      <input type="number" class="input"/>
+                      <label>Observaciones</label>
+                      <textarea class="text-area"></textarea>
+                      <div id="here_comes_to_night">
+                        <input type="submit" value="Grabar"/>
+                        <button type="button"></button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div id="all">
+            <div class="ed-container">
+              <div class="ed-item web-30">
+                <div id="foto-sala"><a href="#inline" class="various"><img src="img/img-salas/1019.jpg"/></a></div>
+              </div>
+              <div class="ed-item web-70">
+                <form id="sala-concurso">
+                  <div class="ed-container">
+                    <div class="ed-item web-50">
+                      <p>Fecha: <span>03-12-2015</span></p>
+                      <label>Concurso</label>
+                      <select class="select">
+                        <option>Luchetti Teletón</option>
+                      </select>
+                      <label>Estado de foto</label>
+                      <select class="select">
+                        <option>No Revisada</option>
+                        <option>Ganadora</option>
+                        <option>No Ganadora</option>
+                        <option>Pendiente</option>
+                      </select>
+                      <label>Mostrar</label>
+                      <select class="select">
+                        <option>SI</option>
+                        <option>NO</option>
+                      </select>
+                    </div>
+                    <div class="ed-item web-50">
+                      <label>Premio</label>
+                      <input type="number" class="input"/>
+                      <label>Observaciones</label>
+                      <textarea class="text-area"></textarea>
+                      <div id="here_comes_to_night">
+                        <input type="submit" value="Grabar"/>
+                        <button type="button"></button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div id="all">
+            <div class="ed-container">
+              <div class="ed-item web-30">
+                <div id="foto-sala"><a href="#inline" class="various">									<img src="img/img-salas/1019.jpg"/></a></div>
+              </div>
+              <div class="ed-item web-70">
+                <form id="sala-concurso">
+                  <div class="ed-container">
+                    <div class="ed-item web-50">
+                      <p>Fecha: <span>03-12-2015</span></p>
+                      <label>Concurso</label>
+                      <select class="select">
+                        <option>Luchetti Teletón</option>
+                      </select>
+                      <label>Estado de foto</label>
+                      <select class="select">
+                        <option>No Revisada</option>
+                        <option>Ganadora</option>
+                        <option>No Ganadora</option>
+                        <option>Pendiente</option>
+                      </select>
+                      <label>Mostrar</label>
+                      <select class="select">
+                        <option>SI</option>
+                        <option>NO</option>
+                      </select>
+                    </div>
+                    <div class="ed-item web-50">
+                      <label>Premio</label>
+                      <input type="number" class="input"/>
+                      <label>Observaciones</label>
+                      <textarea class="text-area"></textarea>
+                      <div id="here_comes_to_night">
+                        <input type="submit" value="Grabar"/>
+                        <button type="button"></button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="paginacion">
+      <div class="ed-container">
+        <div class="ed-item base-100">
+          <form id="adelante">
+            <button type="button" class="next">Siguiente</button>
+          </form>
+          <div id="inline">
+            <div class="ed-item base-100">
+              <h1>Foto nº<span>
+                   
+                  019</span></h1>
+              <div class="scary-monsters-1">
+                <div class="img-salas"><img src="img/img-salas/1019.jpg"/></div>
+              </div>
+              <div class="scary-monsters">
+                <div id="caja-data">
+                  <h3>Datos exhibición</h3>
+                  <ul class="datos__exhibicion">
+                    <li class="reponedor">Datos reponedor</li>
+                    <li>Foto subida por: <span>
+                         
+                        Claudio patricio Silvestre Veliz</span></li>
+                    <li>Mail: <span>claudio.psv@gmail.com</span></li>
+                    <li>Cel: <span>86626239</span></li>
+                    <li>Rut: <span>10408277-7</span></li>
+                  </ul>
+                </div>
+                <div id="caja-data">
+                  <h3>Datos internos</h3>
+                  <ul style="margin:0.5em;" class="datos__exhibicion">
+                    <li>Fecha: <span>
+                         
+                        04-12-2015</span></li>
+                    <li>Jefe Grupo: <span>Ricardo Caro</span></li>
+                    <li>Rut: <span>15506389-0</span></li>
+                    <li>Supervisor: <span>Claudio Silvestre</span></li>
+                    <li>Integrante 1: <span>Ricardo Caro</span></li>
+                    <li>Integrante 1: <span>15506389-0</span></li>
+                    <li>Rut Int. 1: <span>15506389-0</span></li>
+                    <li>Exhibidor: <span>Cabecera góndola</span></li>
+                  </ul>
+                </div>
+                
+                
+                
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

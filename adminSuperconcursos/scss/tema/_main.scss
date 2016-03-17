@@ -1,0 +1,764 @@
+section{
+	#titulo-section{
+		border-bottom:1px solid $grey;
+		padding-top: 1em;
+		padding-bottom: 0em;
+		padding-right:0em;
+		padding-left: 0em;
+		h1{
+			font-size: 1.3em;
+			padding: 1em;
+			margin:0;
+			border-radius: 5px 5px 0px 0px;
+			-moz-border-radius: 5px 5px 0px 0px;
+			-webkit-border-radius: 5px 5px 0px 0px;
+			border: 0px solid #000000;
+			border: 0px solid #000000;
+			border-top:1px solid $grey;
+			border-bottom:none;
+			border-left:1px solid $grey;
+			border-right:1px solid $grey;
+			width: 20%;
+			text-align: center;
+			background: $blanco;
+		}
+	}
+	#titulo-section-fotos{
+		border-bottom:1px solid $grey;
+		padding-top: 1em;
+		padding-bottom: 0em;
+		padding-right:0em;
+		padding-left: 0em;
+		h1{
+			font-size: 1.3em;
+			padding: 1em;
+			margin:0;
+			border-radius: 5px 5px 0px 0px;
+			-moz-border-radius: 5px 5px 0px 0px;
+			-webkit-border-radius: 5px 5px 0px 0px;
+			border: 0px solid #000000;
+			border: 0px solid #000000;
+			border-top:1px solid $grey;
+			border-bottom:none;
+			border-left:1px solid $grey;
+			border-right:1px solid $grey;
+			width: 100%;
+			text-align: center;
+			background: $blanco;
+		}
+	}
+	.tabla-concurso{
+		width: 100%;
+		//margin: 0 auto;
+		padding: 1em;
+		border:1px solid $grey;
+		background: $blanco;
+		margin-top: 1em;
+		overflow:hidden;
+			h2{
+				margin:0 0 0.5em 0;
+			}
+			a{
+				background: $verde;
+				padding: 8px;
+				color:$blanco;
+				text-align: center;
+				display: block;
+				margin-top:0.9em;
+				transition: 0.3s all;
+				&:hover{
+					background: $verde-hover;
+				}
+			}
+
+			//principal
+			.item-status{
+				background: $color-caja;
+				padding:10px;
+				width: 33.333%;
+				height: 205px;
+				float: left;
+				border-right: 1px solid $borde;
+				text-align:center;
+				font-size: 0.9em;
+				&:last-child{
+					border-right:0;
+				}
+				.cant-fotos{
+					width: 100px;
+					height: 100px;
+					border:1px solid $borde;
+					margin:0 auto;
+					font-size: 2em;
+					font-weight: bold;
+					line-height: 95px;
+					margin-bottom: 0.5em;
+				}
+				a.download{
+					margin-bottom: 2em;
+				}
+			}
+		h3{
+			float: left;
+			margin-bottom: 0.5em;
+		}
+		form{
+			width: 100%;
+			height: auto;
+			input[type="search"]{
+				width: 100%;
+				-webkit-border-radius: 2px;
+				-moz-border-radius: 2px;
+				border-radius: 2px;
+				border:1px solid $borde;
+				padding: 10px;
+			}
+			input[type="submit"]{
+				width: 20%;
+				padding:5px;
+				background: $rojo;
+				color: $blanco;
+				text-align: center;
+				border: none;
+				margin-top: 0.5em;
+				text-transform: uppercase;
+				cursor: pointer;
+				transition: 0.3s all;
+				&:hover{
+					background: $rojo-hover;
+				}
+			}	
+		}
+	// tabla
+		table{
+			text-align: center;
+		}
+
+	}
+}
+
+//helpers
+	.status_Btop{
+		margin-top: 0.5em !important;
+	}
+	.status_Nbor{
+		border-right: none !important;
+	}
+
+//modal
+
+#inline{
+	width:800px;
+	height: auto;
+	display:none;
+	img{
+		display: block;
+	}
+	h1{
+		font-size: 1.2em;
+		text-align: left;
+		margin-top:0;
+		width: 100%;
+		display:block;
+		border-bottom: 1px solid $rojo;
+		padding-bottom: 0.5em; 
+	}
+
+	//estilos imagenes de lightbox
+	.img-salas{
+		border:2px solid $rojo;
+	}
+
+	form#status__sala__foto{
+		p{
+			font-size: 0.9em;
+			margin:0.5em 0;
+			span{
+				text-transform: capitalize;
+			}
+		}
+		select{
+			border: 1px solid $verde;
+			padding: 0.4em;
+			width: 100%;
+			background: url(../img/arrow-down.png) no-repeat 97% center;
+		    -webkit-appearance: none;
+		    -moz-appearance: none;
+		    appearance: none; 
+		}
+	}
+
+	.scary-monsters, .scary-monsters-1{
+		float: left;
+		width: 48%;
+		padding: 0.5em;
+		#caja-data{
+			padding: 0.5em;
+			margin-bottom: 0.4em;
+			border-bottom: 1px solid $borde;
+			background: $blanco;
+			h3{
+				font-size: 1.25em;
+				text-align: left;
+				margin: 0 0 10px 0;
+
+			}
+
+
+			ul.datos__exhibicion{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				.reponedor{
+					font-size: 1em;
+				}
+				li{
+					display: block;
+					font-weight: bold;
+					font-size: 0.8em;
+					margin-bottom: 0.8em;
+					span{
+						font-weight: normal;
+					}
+				}
+			}			
+		}
+
+		a.revision{
+			padding:5px;
+			color: $blanco;
+			text-align: center;
+			background: $rojo;
+			font-size: 0.8em;
+			margin-top: 1em;
+			display: block;
+			width: 30%;
+		}	
+	}
+
+	.pL{
+		padding-left: 2em;
+	}
+	.BFondo{
+		background: $blanco;
+	}
+
+}
+
+#inline-detalle{
+	margin-top: 1em;
+	#img-salas-foto{
+		background: $blanco;
+		padding:0.8em;
+		border-bottom: 1px solid $borde;
+	}
+	#caja-data{
+		background: $blanco;
+		padding: 1em;
+		border-bottom: 1px solid $borde;
+		margin-bottom: 1em;
+		h3{
+			font-size: 1.25em;
+			text-align: left;
+			margin: 0 0 10px 0;
+
+		}
+	}
+	ul.datos__exhibicion{
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		.reponedor{
+			font-size: 1em;
+		}
+		li{
+			display: block;
+			font-weight: bold;
+			font-size: 0.8em;
+			margin-bottom: 0.8em;
+			span{
+				font-weight: normal;
+			}
+		}
+	}
+	button.back{
+		// margin: 0 auto;
+		background: $verde;
+		color: $blanco;
+		text-align: center;
+		border: none;
+		font-size: 0.8em;
+		border-bottom: 2px solid $verde-hover;
+		transition: 0.3s all;
+		&:hover{
+			background: $verde-hover;
+		}
+	}
+}
+
+
+//paginacion++
+
+section.paginacion{
+	margin-top:1em;
+	margin-bottom:2em;
+	ul{
+		margin:0;
+		padding: 0;
+		list-style: none;
+		text-align: center;
+		li{
+			display: inline-block;
+			margin-right: 1em;
+			a{
+				text-align: center;
+				display: block;
+				color: $blanco;
+				background: $rojo;
+				line-height: 5px;
+				font-size: 0.8em;
+				padding: 8px;
+				transition: .3s all;
+				border-radius: 5px;
+				&:hover, {
+					background: $verde;
+				}
+			}
+			.activ-pager{
+				background: $verde;
+			}
+			.inicio,
+			.final{
+				background: transparent;
+				color:$rojo;
+				&:hover{
+					background: transparent;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+	form{
+		width: 100%;
+		text-align:center;
+		button[type="button"]{
+			background: $verde;
+			color: $blanco;
+			border: none;
+			border-bottom:2px solid  $verde-hover;
+			transition: 0.3s all;
+			&:hover{
+				background: $verde-hover;
+			}
+		}
+	}
+}
+
+
+
+
+// fotos ganadores
+
+section{
+	#datos__concurso{
+		width: 100%;
+		margin-top: 16px;
+		background: $color-caja;
+		border-bottom: 1px solid $borde;
+		ul{
+			margin:0;
+			padding:0;
+			list-style: none;
+			li{
+				display: inline-block;
+				color:#000;
+				text-align: center;
+				//margin-right: 3.8em;
+				//margin-bottom: 0.5em;
+				font-size: 0.8em;
+				//border-left: 2px solid $verde; 
+				padding: 0 0.5em;
+				padding:0.5em 1em;
+			}
+		}
+	}
+	form#corregirSala{
+		width: 100%;
+		height: auto;
+		float: left;
+		margin-top: 4px;
+		p{
+			width: 13%;
+			color: #000;
+			font-weight: bold;
+			font-size: 0.8em;
+			float: left;
+			margin: 6px 0 0 0;
+		}
+		select{
+			float: left;
+			border: 1px solid $verde;
+			padding: 0.4em;
+			width: 14%;
+			background: url(../img/arrow-down-1.png) no-repeat 85% center;
+		    -webkit-appearance: none;
+		    -moz-appearance: none;
+		    appearance: none;
+		    margin-top: 4px; 
+		}
+	}
+	#datos__ADD{
+		margin-top: 18px;
+		padding: 0.9em;
+		width: 100%;
+		background: $color-caja;
+		border-bottom: 1px solid $borde;
+		input[type="text"]{
+			padding: 8px;
+			border:1px solid $rojo;
+		}
+		input[type="submit"]{
+			color: $blanco;
+			text-align: center;
+			background: $rojo;
+			padding: 6.7px;
+			border: none;
+			//margin-top: 0.8em;
+			transition: 0.3s all;
+			font-size: 0.8em;
+			cursor: pointer;
+			&:hover{
+				background: $rojo-hover;
+			}
+		}
+	}
+}
+
+//agregar cadena
+
+#add_cadena{
+	width: 100%;
+	//background: $blanco;
+	.add_table{
+		table-layout: fixed;
+		width: 100%;
+		margin-top:1.5em;
+		border-collapse: collapse;
+		td, th{
+			border:1px solid $borde;
+		}
+	}
+	.tr-center{
+		text-align: center;
+	}
+	.td-padd{
+		padding: 0.5em 0;
+		border:1px solid $borde;
+	}
+
+	//form si no
+	form#mostrar{
+		select{
+			border: 1px solid $verde;
+			padding: 0.4em;
+			width: 30%;
+			background: url(../img/arrow-down-1.png) no-repeat 87% center;
+		    -webkit-appearance: none;
+		    -moz-appearance: none;
+		    appearance: none; 
+		}
+	}
+
+// agergar sala
+
+	#add_sala{
+		margin-top: 1.5em;
+		padding: 1em;
+		background: $blanco;
+		border: 1px solid $borde;
+			label{
+				width: 100%;
+				font-size: 0.9em;
+				text-align: left;
+			}
+			input[type="text"],
+			input[type="submit"],
+			select{
+				width: 100%;
+				margin:0.5em 0;
+			}
+			input[type="text"]{
+				padding: 5px;
+				border: 1px solid $rojo;
+			}
+			select{
+				border: 1px solid $rojo;
+				padding: 0.4em;
+				width: 100%;
+				background: url(../img/arrow-down-red.png) no-repeat 97% center;
+			    -webkit-appearance: none;
+			    -moz-appearance: none;
+			    appearance: none; 
+			}
+			input[type="submit"]{
+				color: $blanco;
+				text-align: center;
+				background: $rojo;
+				padding: 6.7px;
+				border: none;
+				//margin-top: 0.8em;
+				transition: 0.3s all;
+				font-size: 0.8em;
+				cursor: pointer;
+				&:hover{
+					background: $rojo-hover;
+				}
+			}
+			label.find{
+				width: 100%;
+				display: block;
+			}
+			input[type="search"]{
+				width: 100%;
+				margin:0.5em 0;
+				padding: 8px;
+			}
+
+			//parafechabuscador
+			#fecha_buscador{
+				width: 100%;
+				label{
+					display: block;
+				}
+				select.date {
+					width: 32%;
+				}
+			}
+	}
+
+// salida por cadena
+	#salida_por_cadena{
+		margin-top: 1.5em;
+		label{
+			font-size: 0.8em;
+			margin-right: 0.5em;
+		}
+		select{
+			border: 1px solid $rojo;
+			padding: 0.4em;
+			width: 30%;
+			background: url(../img/arrow-down-red.png) no-repeat 97% center;
+		    -webkit-appearance: none;
+		    -moz-appearance: none;
+		    appearance: none; 
+		}
+	}
+
+
+}
+
+	.editar-datos{
+		background: url(../img/edit-01.svg) center center;
+		width: 20px;
+		height: 20px;
+		display: block;
+		margin:0 auto;
+	} 
+
+//ligthtbox edit cadena
+
+#inline-edit{
+	width: 100%;
+	display: none;
+	h1{
+		margin:0;
+		border-bottom: 1px solid $rojo;
+		font-size: 1.4em;
+	}
+	form#editalight{
+		margin-top: 1em;
+		input[type="text"],
+		input[type="submit"]{
+			width: 100%;
+		}
+		input[type="text"]{
+			padding: 5px;
+		}
+		input[type="submit"]{
+			width: 100%;
+			background: $rojo;
+			color: $blanco;
+			border: none;
+			padding: 0.7em;
+			cursor: pointer;
+			font-size: 0.7em;
+			text-transform: uppercase;
+			&:hover{
+				background: $rojo-hover;
+			}
+			}
+		.label{
+			width: 100%;
+			margin: 0.5em 0;
+			label{
+				font-size: 0.9em;
+				font-weight: bold;
+				margin-right: 1em;
+			}
+		}
+	}
+	form#edita_sala_o{
+		margin-top: 0.5em;
+		input[type="text"]{
+			margin-bottom:0.9em;
+			width: 100%;
+			padding: 6px;
+			margin-top:1em;
+		}
+		.label_sala{
+			margin-bottom: 0.8em;
+		}
+		input[type="submit"]{
+			width: 100%;
+			background: $rojo;
+			color: $blanco;
+			border: none;
+			padding: 0.7em;
+			cursor: pointer;
+			font-size: 0.7em;
+			text-transform: uppercase;
+			transition: 0.3s all;
+			&:hover{
+				background: $rojo-hover;
+			}
+		}
+	}
+}
+
+
+
+//foto interior sala
+
+section#sala-foto{
+	width: 100%;
+	margin-top: 1.5em;
+
+	#all{
+		background: $blanco;
+		border-bottom: 1px solid $borde;
+		//border-top: 1px solid $borde;
+		margin-bottom: 1em;
+	}
+	#foto-sala{
+		width: 330px;
+		height: 200px;
+		overflow:hidden;
+		margin: 0.5em auto;
+		background: $blanco; 		
+	}
+	form#sala-concurso{
+		padding: 1em;
+		//position: relative;
+		background: $blanco;
+		font-weight: bold;
+		font-size: 0.9em;
+		p{
+			font-weight: bold;
+			margin: 0.5em 0;
+			position: relative;
+		}
+		#here_comes_to_night{
+			display: block;
+			position: relative;
+				button[type="button"]{
+					background: url(../img/trash.svg);
+					border: none;
+					color:$blanco;
+					margin-bottom: 0;
+					padding: 0 1em;
+					position: absolute;
+					right: 0;
+					bottom: 0;
+					transition: 0.3s all;
+					display: block;
+					width: 22px;
+					height: 25px;
+					&:hover{
+						opacity: 0.8;
+					}
+				}
+		}
+
+		label{
+			width: 100%;
+			display: block;
+			margin: 0.5em 0;
+			font-size: 0.8em;
+		}
+		input[type="submit"]{
+			width: 40%;
+			color: $blanco;
+			text-align: center;
+			background: $rojo;
+			padding: 5px;
+			border: none;
+			margin-top: 0.8em;
+			transition: 0.3s all;
+			font-size: 0.9em;
+			cursor: pointer;
+			&:hover{
+				background: $rojo-hover;
+			}
+		}
+	}
+}
+//helper
+
+.select{
+	//float: left;
+	border: 1px solid rgba($verde,.2);
+	padding: 0.4em;
+	width: 100%;
+	background: url(../img/arrow-down-1.png) no-repeat 95% center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    //margin-top: 4px; 
+}
+
+.input, .text-area{
+	border: 1px solid rgba($verde,.2);
+	width: 100%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    padding: 8px;	
+}
+
+
+
+
+
+//usuarios
+
+#inline-user{
+	display: none;
+	h1{
+		font-size: 1.2em;
+		border-bottom: 1px solid $rojo;
+	}
+	ul.register{
+		margin:0;
+		padding: 0;
+		list-style: none;
+		li{
+			font-size: 0.8em;
+			margin-bottom: 0.8em;
+			span{
+				font-weight: bold;
+				margin-left: 0.4em;
+				//display: inline-block;
+			}
+		}
+	}
+}

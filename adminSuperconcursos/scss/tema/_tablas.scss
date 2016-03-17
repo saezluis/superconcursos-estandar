@@ -1,0 +1,73 @@
+.table{
+	table-layout: fixed;
+	width: 100%;
+	border-collapse: collapse;
+	td, th{
+		border:1px solid #999;
+		a{
+			background: transparent;
+			display: block;
+			&:hover{
+				fill:$verde;
+				background: transparent;
+			}
+		}
+	}
+	thead{
+		transition: .3s all;
+		.titulosBar{
+			font-size: 0.8em;
+			th{
+				padding: 0.5em 0;
+			}
+		}
+	}
+	tbody{
+		tr{
+			&:hover{
+				background: rgba($verde,0.05);
+			}
+			td{
+				font-size: 0.8em;
+			}
+			.loose:before,
+			.win:before{
+				width: 30px;
+				height: 30px;
+				display: block;
+				//background: red;
+				position: relative;
+				//margin-right: 0.5em; 
+			}
+			.win:before{
+				content: url(../img/win.png) ;
+				color:$verde;
+				left: 40%;
+			}
+			.loose:before{
+				content: url(../img/loose.png) ;
+				color:#rojo;
+				left: 40%;
+			}
+			.win{
+				color:$verde;
+			}
+			.loose{
+				color:$rojo;
+			}
+		}
+		form#selectorGanador{
+			select{
+				border: 1px solid $verde;
+				padding: 0.4em;
+				width: 50%;
+				background: url(../img/arrow-down-1.png) no-repeat 85% center;
+			    -webkit-appearance: none;
+			    -moz-appearance: none;
+			    appearance: none;
+			    text-transform: uppercase; 
+			}
+		}
+	}
+
+}
