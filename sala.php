@@ -82,7 +82,7 @@ exit;
           <div class="logo"><img src="img/logo.svg"/></div>
           </div>
 
-          <div class="ed-item base-100 tablet-100 web-50" >
+          <div class="ed-item base-100 tablet-100 web-50 relaticos" >
             <label for="show-menu" class="show-menu">Menu</label>
             <input type="checkbox" id="show-menu" role="button">
 
@@ -93,6 +93,7 @@ exit;
               <li><a href="#">Ganadores</a></li>
               <li><a href="#">Contacto</a></li>
             </ul>
+            <a href="#" class="cerrarSesion">cerrar sesión</a>
           </div>
 
       </div>

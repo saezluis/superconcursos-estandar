@@ -2772,6 +2772,19 @@ header {
         width: 15%; } }
   header .logo.interiores img {
     width: 35%; }
+  header a.cerrarSesion {
+    color: #8E8E8E;
+    position: absolute;
+    top: -155px;
+    right: 10px;
+    font-weight: normal;
+    font-size: 0.7em;
+    border: 1px solid #ECEBEB;
+    padding: 2px; }
+    @media screen and (min-width: 1024px) {
+      header a.cerrarSesion {
+        top: 80px;
+        right: 30px; } }
 
 section#form {
   width: 100%;
@@ -2835,6 +2848,9 @@ section#form {
         section#form form input[type="submit"] {
           padding: 20px;
           width: 80%; } }
+
+.relaticos {
+  position: relative; }
 
 footer {
   position: absolute;
@@ -3183,6 +3199,10 @@ section#interior a.helperbuttons {
   display: block;
   margin-bottom: 0.8em;
   background: #EFEFEF; }
+  @media screen and (min-width: 768px) {
+    section#interior a.helperbuttons {
+      width: 50%;
+      margin: 0 auto 1em auto; } }
 section#interior .bottom-margen {
   margin-bottom: 2em; }
 

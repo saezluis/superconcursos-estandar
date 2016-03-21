@@ -2351,7 +2351,7 @@
 		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 35904,
+		"initialSize": 302393,
 		"inputAbbreviatedPath": "\/estandar.jpg",
 		"outputAbbreviatedPath": "\/estandar.jpg",
 		"outputPathIsOutsideProject": 0,
@@ -2365,6 +2365,17 @@
 		"initialSize": 363227,
 		"inputAbbreviatedPath": "\/fotos-concursos\/0.jpg",
 		"outputAbbreviatedPath": "\/fotos-concursos\/0.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/fotos-concursos\/100.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 303906,
+		"inputAbbreviatedPath": "\/fotos-concursos\/100.jpg",
+		"outputAbbreviatedPath": "\/fotos-concursos\/100.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2402,6 +2413,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/fotos-concursos\/1046.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 303906,
+		"inputAbbreviatedPath": "\/fotos-concursos\/1046.jpg",
+		"outputAbbreviatedPath": "\/fotos-concursos\/1046.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/fotos-concursos\/1050.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -2409,6 +2431,28 @@
 		"initialSize": 327235,
 		"inputAbbreviatedPath": "\/fotos-concursos\/1050.jpg",
 		"outputAbbreviatedPath": "\/fotos-concursos\/1050.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/fotos-concursos\/109.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 444716,
+		"inputAbbreviatedPath": "\/fotos-concursos\/109.jpg",
+		"outputAbbreviatedPath": "\/fotos-concursos\/109.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/fotos-concursos\/130.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 303906,
+		"inputAbbreviatedPath": "\/fotos-concursos\/130.jpg",
+		"outputAbbreviatedPath": "\/fotos-concursos\/130.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2468,6 +2512,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/fotos-concursos\/245.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 303906,
+		"inputAbbreviatedPath": "\/fotos-concursos\/245.jpg",
+		"outputAbbreviatedPath": "\/fotos-concursos\/245.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/fotos-concursos\/276.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 303906,
+		"inputAbbreviatedPath": "\/fotos-concursos\/276.jpg",
+		"outputAbbreviatedPath": "\/fotos-concursos\/276.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/fotos-concursos\/287.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -2512,6 +2578,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/fotos-concursos\/411.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 303906,
+		"inputAbbreviatedPath": "\/fotos-concursos\/411.jpg",
+		"outputAbbreviatedPath": "\/fotos-concursos\/411.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/fotos-concursos\/420.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -2519,6 +2596,39 @@
 		"initialSize": 468791,
 		"inputAbbreviatedPath": "\/fotos-concursos\/420.jpg",
 		"outputAbbreviatedPath": "\/fotos-concursos\/420.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/fotos-concursos\/429.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 36532,
+		"inputAbbreviatedPath": "\/fotos-concursos\/429.jpg",
+		"outputAbbreviatedPath": "\/fotos-concursos\/429.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/fotos-concursos\/434.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 36532,
+		"inputAbbreviatedPath": "\/fotos-concursos\/434.jpg",
+		"outputAbbreviatedPath": "\/fotos-concursos\/434.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/fotos-concursos\/472.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 303906,
+		"inputAbbreviatedPath": "\/fotos-concursos\/472.jpg",
+		"outputAbbreviatedPath": "\/fotos-concursos\/472.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2563,6 +2673,17 @@
 		"initialSize": 48158,
 		"inputAbbreviatedPath": "\/fotos-concursos\/512.jpg",
 		"outputAbbreviatedPath": "\/fotos-concursos\/512.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/fotos-concursos\/527.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 48158,
+		"inputAbbreviatedPath": "\/fotos-concursos\/527.jpg",
+		"outputAbbreviatedPath": "\/fotos-concursos\/527.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2655,6 +2776,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/fotos-concursos\/669.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 303906,
+		"inputAbbreviatedPath": "\/fotos-concursos\/669.jpg",
+		"outputAbbreviatedPath": "\/fotos-concursos\/669.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/fotos-concursos\/670.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -2743,6 +2875,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/fotos-concursos\/818.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 303906,
+		"inputAbbreviatedPath": "\/fotos-concursos\/818.jpg",
+		"outputAbbreviatedPath": "\/fotos-concursos\/818.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/fotos-concursos\/821.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 48158,
+		"inputAbbreviatedPath": "\/fotos-concursos\/821.jpg",
+		"outputAbbreviatedPath": "\/fotos-concursos\/821.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/fotos-concursos\/823.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -2761,6 +2915,17 @@
 		"initialSize": 67314,
 		"inputAbbreviatedPath": "\/fotos-concursos\/89.jpg",
 		"outputAbbreviatedPath": "\/fotos-concursos\/89.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/fotos-concursos\/922.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 303906,
+		"inputAbbreviatedPath": "\/fotos-concursos\/922.jpg",
+		"outputAbbreviatedPath": "\/fotos-concursos\/922.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -2794,6 +2959,17 @@
 		"initialSize": 67314,
 		"inputAbbreviatedPath": "\/fotos-concursos\/953.jpg",
 		"outputAbbreviatedPath": "\/fotos-concursos\/953.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/fotos-concursos\/997.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 303906,
+		"inputAbbreviatedPath": "\/fotos-concursos\/997.jpg",
+		"outputAbbreviatedPath": "\/fotos-concursos\/997.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0

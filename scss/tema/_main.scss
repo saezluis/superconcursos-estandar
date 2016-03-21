@@ -390,6 +390,10 @@ section#interior{
 			display: block;
 			margin-bottom: 0.8em;
 			background: $color-button;
+			@include desde (tablet){
+				width: 50%;
+				margin:0 auto 1em auto;
+			}
 		}
 		.bottom-margen{
 			margin-bottom: 2em;
