@@ -38,8 +38,8 @@ exit;
   <body>
 	<?php
 	
-	$id_campana = $_GET['id_campana'];
-	$_SESSION['campana_sesion'] = $id_campana;	
+	//$id_campana = $_GET['id_campana'];
+	//$_SESSION['campana_sesion'] = $id_campana;	
 	
 	include_once 'config.php';
 		
@@ -75,9 +75,12 @@ exit;
 	<section id="interior" class="ed-container">
 		<div class="ed-item base-100">
 		<h1 class="centrar">Elige exhibición</h1>
-		 <form id="seleccion" method="post" action="">
+		 <form id="seleccion" method="post" action="sala.php">
 			<select class="style-select" name="sala_seleccionada" onchange="this.form.submit()">
 				<option>Elije una exhibición</option>
+				<option>Exhibición 01</option>
+				<option>Exhibición 02</option>
+				<option>Exhibición 03</option>				
 			</select>
 		 </form>
 

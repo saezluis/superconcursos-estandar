@@ -90,10 +90,10 @@ exit;
 				<!-- <h1 class="centrar">De vuelta a seleccionar campaña en: <span id="countdown">5</span>.</h1>	 -->   
       </div>
       <div class="ed-item base-100">
-			<a href="#" class="helperbuttons">Volver a seleccionar campaña</a>   
+			<a href="selecciona-campana.php" class="helperbuttons">Volver a seleccionar campaña</a>   
       </div>
       <div class="ed-item base-100">
-			<a href="#" class="helperbuttons">Tomar otra foto</a>   
+			<a href="subir-imagen.php" class="helperbuttons">Tomar otra foto</a>   
       </div>
     </section>
     <footer>
@@ -123,18 +123,24 @@ include_once 'config.php';
 	$conexion=mysqli_connect($host,$username,$password,$db_name) or die("Problemas con la conexión");
 	$acentos = $conexion->query("SET NAMES 'utf8'");
 
-	$rut = $_SESSION['username'];
-	
+	//$rut = $_SESSION['username'];
+	//$rut = 1;
+	/*
 	$registroUsuario=mysqli_query($conexion,"select * from cuenta WHERE rut='$rut'") or die("Problemas en el select:".mysqli_error($conexion));
 	
 	if($reg=mysqli_fetch_array($registroUsuario)){
 		$rut_usuario = $reg['rut'];
 	}
-
-	$id_campana = $_SESSION['campana_sesion'];	
-	$id_exhibicion = $_SESSION['exhibicion_sesion'];
+	*/
+	$rut_usuario = 1;
+	//$id_campana = $_SESSION['campana_sesion'];	
+	//$id_exhibicion = $_SESSION['exhibicion_sesion'];
+	$id_campana = 1;	
+	$id_exhibicion = 1;
 	
-	$id_sala = $_SESSION['id_sala'];
+	
+	//$id_sala = $_SESSION['id_sala'];
+	$id_sala = 1;
 	
 	//$registroSala=mysqli_query($conexion,"select id_sala from sala WHERE nombre='$nombre_sala'") or die("Problemas en el select:".mysqli_error($conexion));
 	
@@ -178,6 +184,8 @@ include 'WideImage/lib/WideImage.php';
 	//echo "<br>";
 	//echo "<br>";
 	//echo "asi quedo el nombre para el archivo de nombre: ".$newNameFinal;
+	
+	
 	
 	
 	mysqli_query($conexion,"insert into foto(id_sala,id_rut,id_campana,id_exhibicion,nombre_foto,estado) values 

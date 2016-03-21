@@ -39,24 +39,24 @@ exit;
   <body>
 	<?php
 	
-		$nombre_cadena = $_REQUEST['nombre_cadena'];
+		//$nombre_cadena = $_REQUEST['nombre_cadena'];
 		
-		$id_sala = $_REQUEST['sala_seleccionada'];
+		//$id_sala = $_REQUEST['sala_seleccionada'];
 		
-		$_SESSION['id_sala'] = $id_sala;
+		//$_SESSION['id_sala'] = $id_sala;
 		
 		include_once 'config.php';
 		
 		$conexion=mysqli_connect($host,$username,$password,$db_name) or die("Problemas con la conexión");
 		$acentos = $conexion->query("SET NAMES 'utf8'");
-	
+		/*
 		$registroSala=mysqli_query($conexion,"select * from sala WHERE id_sala='$id_sala'") or die("Problemas en el select:".mysqli_error($conexion));
 		
 		if($reg=mysqli_fetch_array($registroSala)){						
 			$nombreSala = $reg['nombre'];
 			$direccion_sala = $reg['direccion'];						
 		}
-		
+		*/
 	?>
     <header class="normal">
 
@@ -87,8 +87,11 @@ exit;
                 <div class="ticket">
                   <div id="campo_info">
 					<?php
-                    echo "<p>";				
-						echo "$nombre_cadena <span> / </span><span> $nombreSala </span><span> / </span><span> $direccion_sala </span>";				  
+                    //echo "<p>";				
+						//echo "$nombre_cadena <span> / </span><span> $nombreSala </span><span> / </span><span> $direccion_sala </span>";				  
+                    //echo "</p>";
+					echo "<p>";				
+						echo "Cadena: aquí su cadena <span> / </span><span> Sala: aquí la sala </span><span> / </span><span> Dirección: aquí la dirección </span>";				  
                     echo "</p>";
 					?>
                   </div><img src="img/ticket.svg" class="ok"/>

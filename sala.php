@@ -40,10 +40,10 @@ exit;
 	//Aqui debo buscar por rut donde trabaja el mercaderista
 	//puedo conseguir el rut comparando contra la variable de sesion del correo
 	
-	$rut = $_SESSION['username'];
+	//$rut = $_SESSION['username'];
 	
-	$id_exhibicion = $_REQUEST['id_ex_send'];
-	$_SESSION['exhibicion_sesion'] = $id_exhibicion;
+	//$id_exhibicion = $_REQUEST['id_ex_send'];
+	//$_SESSION['exhibicion_sesion'] = $id_exhibicion;
 	
 	//echo "email: ".$emailUsuario;
 	//echo "<br>";
@@ -52,7 +52,7 @@ exit;
 		
 	$conexion=mysqli_connect($host,$username,$password,$db_name) or die("Problemas con la conexión");
 	$acentos = $conexion->query("SET NAMES 'utf8'");
-	
+	/*
 	$registroUsuario=mysqli_query($conexion,"select * from cuenta WHERE rut='$rut'") or die("Problemas en el select:".mysqli_error($conexion));
 
 	if($reg=mysqli_fetch_array($registroUsuario)){
@@ -73,7 +73,7 @@ exit;
 	if($reg=mysqli_fetch_array($registroCadena)){
 		$nombre_cadena = $reg['nombre'];								
 	}	
-	
+	*/
 	?>
     <header class="normal">
 
@@ -108,15 +108,18 @@ exit;
                 <div class="ticket">
                   <div id="campo_info">
 					<?php
-                    echo "<p>$nombre_cadena</p>";
-					echo "<input type=\"text\" name=\"nombre_cadena\" value=\"$nombre_cadena\" hidden=hidden >";
+                    //echo "<p>$nombre_cadena</p>";
+					//echo "<input type=\"text\" name=\"nombre_cadena\" value=\"$nombre_cadena\" hidden=hidden >";
 					?>
                   </div><img src="img/ticket.svg" class="ok"/>
                 </div>
                 <select class="style-select" name="sala_seleccionada" onchange="this.form.submit()">				
                   <option>Elije una sala</option>
+				  <option>Sala 01</option>
+				  <option>Sala 02</option>
+				  <option>Sala 03</option>
 				  <?php
-				  
+					/*
 					$registroSala1=mysqli_query($conexion,"select * from sala WHERE id_sala='$id_sala_01' ") or die("Problemas en el select:".mysqli_error($conexion));
 						while($reg=mysqli_fetch_array($registroSala1)){
 							$id_sala1 = $reg['id_sala'];
@@ -150,7 +153,7 @@ exit;
 							//$_SESSION['id_sala'] = $id_sala3;
 						}
 					}
-					
+					*/
 				  ?>
                 </select>
               </form>            
