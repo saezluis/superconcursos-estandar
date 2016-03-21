@@ -82,19 +82,9 @@ exit;
           <div class="logo"><img src="img/logo.svg"/></div>
           </div>
 
-          <div class="ed-item base-100 tablet-100 web-50 relaticos" >
-            <label for="show-menu" class="show-menu">Menu</label>
-            <input type="checkbox" id="show-menu" role="button">
-
-            <ul id="menu">
-              <li><a href="#">Inicio</a></li>
-              <li><a href="#">Bases</a></li>
-              <li><a href="#">Premios</a></li>
-              <li><a href="#">Ganadores</a></li>
-              <li><a href="#">Contacto</a></li>
-            </ul>
-            <a href="#" class="cerrarSesion">cerrar sesión</a>
-          </div>
+          <?php
+			include "menu.php";
+		  ?>
 
       </div>
     </header>
@@ -106,14 +96,16 @@ exit;
 		
             
               <form id="seleccion" method="post" action="subir-imagen.php">
+				<!--
                 <div class="ticket">
                   <div id="campo_info">
-					<?php
+					php-inicio
                     //echo "<p>$nombre_cadena</p>";
 					//echo "<input type=\"text\" name=\"nombre_cadena\" value=\"$nombre_cadena\" hidden=hidden >";
-					?>
+					php-fin
                   </div><img src="img/ticket.svg" class="ok"/>
                 </div>
+				-->
                 <select class="style-select" name="sala_seleccionada" onchange="this.form.submit()">				
                   <option>Elije una sala</option>
 				  <option>Sala 01</option>

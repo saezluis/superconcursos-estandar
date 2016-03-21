@@ -1,0 +1,81 @@
+aside{
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+
+	.logo{
+		display: block;
+		margin:0 auto 1em auto;
+		background: #fff;
+		text-align: center;
+		img{
+			width: 90%;
+		}
+	}
+	.aqui-les-va{
+		background: #f9f9f9;
+		padding: 10px;
+		h1{
+			margin: 0 0 0.4em 0;
+			font-size: 1.35em; 
+		}
+		h2{
+			margin: 0 0 0 0;
+			font-size: 0.9em; 
+		}
+		.campana,.tienda{
+			margin-bottom: 0.5em;
+			select{
+				width: 100%;
+				padding: 5px;
+			}
+		}
+	}
+
+	div.init_inicio{
+		width: 100%;
+		margin: 0.9em 0;
+		form{
+			input[type="submit"]{
+				border:none;
+			    padding: 6px 8px;
+			    color: #fff;
+			    background: #ed1c24;
+			    font-size: 0.8em;
+			    text-align: center;
+			    width: 100%;
+			    margin: 0 auto;
+			    text-align: left;
+			    display: block;
+			    transition: all .3s;
+			    border-radius: 4px;
+			    text-transform: uppercase;
+			    cursor: pointer;
+			    &:hover{
+			    	background: $rojo-darks;
+			    }
+			}
+		}
+	}
+	.btns_selectores{
+			input[type="submit"]{
+				border:none;
+			    padding: 6px 8px;
+			    color: #fff;
+			    background: #ed1c24;
+			    font-size: 0.7em;
+			    text-align: center;
+			    width: 100%;
+			    margin: 0 auto;
+			    text-align: left;
+			    display: block;
+			    transition: all .3s;
+			    border-radius: 4px;
+			    //text-transform: uppercase;
+			    cursor: pointer;
+			    &:hover{
+			    	background: $rojo-darks;
+			    }
+			}
+	}
+}

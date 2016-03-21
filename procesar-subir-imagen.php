@@ -65,19 +65,9 @@ exit;
           <div class="logo"><img src="img/logo.svg"/></div>
           </div>
 
-          <div class="ed-item base-100 tablet-100 web-50 relaticos" >
-            <label for="show-menu" class="show-menu">Menu</label>
-            <input type="checkbox" id="show-menu" role="button">
-
-            <ul id="menu">
-              <li><a href="#">Inicio</a></li>
-              <li><a href="#">Bases</a></li>
-              <li><a href="#">Premios</a></li>
-              <li><a href="#">Ganadores</a></li>
-              <li><a href="#">Contacto</a></li>
-            </ul>
-            <a href="#" class="cerrarSesion">cerrar sesión</a>
-          </div>
+           <?php
+			include "menu.php";
+		  ?>
 
       </div>
     </header>
@@ -188,7 +178,7 @@ include 'WideImage/lib/WideImage.php';
 	
 	
 	
-	
+	/*
 	mysqli_query($conexion,"insert into foto(id_sala,id_rut,id_campana,id_exhibicion,nombre_foto,estado) values 
 									('$id_sala',
 									'$rut_usuario',									
@@ -198,6 +188,19 @@ include 'WideImage/lib/WideImage.php';
 									'No Revisada'
 									)")
 	or die("Problemas con el insert de los servicios");
+	*/
+	
+	mysqli_query($conexion,"insert into registro(id_member,id_supervisor,id_sala,id_campana,id_exhibicion,nombre_foto,fecha,comentario) values 
+									(1,
+									1,									
+									1,
+									1,
+									1,									
+									'$newNameFinal',
+									'',
+									''
+									)")
+	or die("Problemas con el insert de la foto");
 	
 	
 	//Subir imagen
