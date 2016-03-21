@@ -1,0 +1,96 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: block;
+  width: 960px;
+  margin: 0 auto;
+}
+
+#voudoo-menu { font-family:"roboto", Arial}
+
+#voudoo-menu ul li { list-style: none; }
+
+#voudoo-menu ul li { float: left; }
+
+#voudoo-menu ul li a {
+  background-color: #c0392b;
+  color: #fff;
+  padding: 5px 20px;
+  cursor: pointer;
+  position: relative;
+  display: block;
+  text-decoration: none;
+}
+
+#voudoo-menu ul:first-child li a:hover {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+#voudoo-menu ul li ul li { float: none; }
+
+#voudoo-menu ul li ul li a {
+  background-color: #ecf0f1;
+  color: #595959;
+}
+
+#voudoo-menu ul li ul {
+  display: none;
+  position: absolute;
+}
+
+#voudoo-menu-toggle {
+  width: 45px;
+  display: none;
+  position: fixed;
+  z-index: 99;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+#voudoo-menu-toggle div {
+  height: 5px;
+  margin: 0 auto;
+  background-color: #bdc3c7;
+  margin-bottom: 3px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: inset 1px 1px 2px 0px #fff;
+  -webkit-box-shadow: inset 1px 1px 2px 0px #fff;
+  box-shadow: inset 1px 1px 2px 0px #fff;
+}
+
+#voudoo-menu-toggle div:last-child { margin-bottom: 0; }
+
+/************************************************************************************
+    *
+    * Media Queries
+    * Mobile View
+    *
+ ***********************************************************************************/
+
+@media (max-width: 600px) {
+
+#voudoo-menu-toggle { display: inherit; }
+
+#voudoo-menu {
+  display: none;
+  width: 70%;
+  position: fixed;
+  right: 0;
+  height: 100%;
+  background-color: #c0392b;
+}
+
+#voudoo-menu ul li { float: none; }
+
+#voudoo-menu ul li a { position: initial; }
+
+#voudoo-menu ul li ul { position: initial; }
+}

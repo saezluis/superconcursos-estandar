@@ -14,25 +14,38 @@ session_destroy();
     <title></title>
   </head>
   <body>
-    <header>
+    <header class="normal">
+
       <div class="ed-container">
-        <div class="ed-item base-100"><a href="index.html" class="logo"><img src="img/logo.svg"/></a></div>
+          <div class="ed-item base-100 tablet-100 web-100 absoluto">
+          <div class="logo-index"><img src="img/logo.svg"/></div>
+          </div>
       </div>
     </header>
     <section id="interior" class="ed-container">
-	<div class="ed-item base-100">
-      <h1>Participa y gana con tus exhibiciones</h1>
-      <div class="ed-container">		 
-          <form method="post" action="checklogin.php">
-            <input type="text" name="rut" placeholder="ingresa tu Rut" required="required"/>
-            <input type="password" name="password" placeholder="ingresa contraseña" required="required"/>
-            <input type="submit" value="ingresar"/>
-          </form>		
+      <div class="ed-item base-100">
+          <h1>Participa y gana con tus exhibiciones</h1>
+      </div>
+      <div class="ed-container">
+          <div class="ed-item base-100">
+            <form method="post" action="checklogin.php" class="form_login">
+              <input type="text" name="rut" placeholder="ingresa tu Rut" required="required"/>
+              <input type="password" name="password" placeholder="ingresa contraseña" required="required"/>
+              <input type="submit" value="ingresar"/>
+            </form>
+          </div>    
        </div>
-     </div>
     </section>
-    <footer class="ed-container total">
+<!--     <footer class="ed-container total">
       <div class="ed-item base-100"><img src="img/fot.png"/></div>
-    </footer>
+    </footer> -->
+    <footer>
+      <div class="ed-container total">
+          <div class="ed-item base-100">
+            <!-- <img src="img/fot.png"/> -->
+            <p>Todos los derechos reservados</p>
+          </div>
+      </div>
+    </footer>    
   </body>
 </html>

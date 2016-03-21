@@ -1,5 +1,5 @@
 <?php
-header( "refresh:5;url=selecciona-campana.php" );
+header( "refresh:5000;url=selecciona-campana.php" );
 
 session_start();
 
@@ -40,7 +40,7 @@ exit;
 	<script type="text/javascript">
 
 	(function () {
-		var timeLeft = 5,
+		var timeLeft = 5000,
 			cinterval;
 
 		var timeDec = function (){
@@ -58,19 +58,52 @@ exit;
   </head>
   <body>	
     
-	
+    <header class="normal">
+
+      <div class="ed-container">
+          <div class="ed-item base-100 tablet-100 web-50 absoluto">
+          <div class="logo"><img src="img/logo.svg"/></div>
+          </div>
+
+          <div class="ed-item base-100 tablet-100 web-50" >
+            <label for="show-menu" class="show-menu">Menu</label>
+            <input type="checkbox" id="show-menu" role="button">
+
+            <ul id="menu">
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Bases</a></li>
+              <li><a href="#">Premios</a></li>
+              <li><a href="#">Ganadores</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </div>
+
+      </div>
+    </header>
+
     <section id="interior" class="ed-container">
       <div class="ed-item base-100">
-            <h1 class="centrar">Información:</h1>
-			<h1 class="centrar">Datos procesados con éxito</h1>             
-				<br>
-				<br>
-				<h1 class="centrar">De vuelta a seleccionar campaña en: <span id="countdown">5</span>.</h1>	   
+<!--             <h1 class="centrar">Información:</h1> -->
+			<h1 class="centrar bottom-margen">Foto subida con éxito</h1>         
+<!-- 				<br>
+				<br> -->
+				<!-- <h1 class="centrar">De vuelta a seleccionar campaña en: <span id="countdown">5</span>.</h1>	 -->   
+      </div>
+      <div class="ed-item base-100">
+			<a href="#" class="helperbuttons">Volver a seleccionar campaña</a>   
+      </div>
+      <div class="ed-item base-100">
+			<a href="#" class="helperbuttons">Tomar otra foto</a>   
       </div>
     </section>
-    <footer class="ed-container total">
-      <div class="ed-item base-100"><img src="img/fot.png"/></div>
-    </footer>    
+    <footer>
+      <div class="ed-container total">
+          <div class="ed-item base-100">
+            <!-- <img src="img/fot.png"/> -->
+            <p>Todos los derechos reservados</p>
+          </div>
+      </div>
+    </footer>   
   </body>
 </html>
 

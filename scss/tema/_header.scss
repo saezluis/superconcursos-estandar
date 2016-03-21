@@ -1,17 +1,17 @@
 
 body{
-	background:
-	url(../img/fot.png) center bottom no-repeat;
-	background-color:$rojo;
+	// background:
+	// url(../img/fot.png) center bottom no-repeat;
+	background-color:$gray;
     overflow-y: scroll;
     overflow-x: hidden;
     width: 100%;
     height: 100vh;
 	//background-image: url(../img/fot.png) no-repeat;
     @include desde (web){
-    	background:
-    	url(../img/fot.png) center bottom no-repeat,
-    	url(../img/bg.jpg) no-repeat;
+    	background:$gray;
+    	// url(../img/fot.png) center bottom no-repeat,
+    	// url(../img/bg.jpg) no-repeat;
     }
 }
     #mano_tel{
@@ -97,12 +97,44 @@ body{
 	}
 header{
 	width:100%;
-	a{
+
+	.logo{
 		text-align: center;
 		display: block;
-		margin-top: 1em;
+		margin: 1em auto 1em auto; 
+		width: 50%;
+		// margin:1em auto 0 auto;
+		@include desde (tablet){
+			width: 20%;
+		}
+		@include desde (web){
+			margin-top:1em;
+			margin-left: 0;
+			width: 30%;
+		}
+		@include desde (hd){
+			width: 30%;
+		}
 	}
-	a.interiores{
+	.logo-index{
+		text-align: center;
+		display: block;
+		margin: 1em auto 1em auto; 
+		width: 50%;
+		// margin:1em auto 0 auto;
+		@include desde (tablet){
+			width: 20%;
+		}
+		@include desde (web){
+			margin-top:1em;
+			//margin-left: 0;
+			width: 15%;
+		}
+		@include desde (hd){
+			width: 15%;
+		}
+	}
+	.logo.interiores{
 		img{
 			width: 35%;
 		}

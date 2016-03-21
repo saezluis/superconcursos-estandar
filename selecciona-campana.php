@@ -49,36 +49,92 @@ exit;
 	
 		
 	?>
-    <header class="normal">
-      <div class="ed-container">
-        <div class="ed-item base-100 absoluto"><a href="index.html"><img src="img/logo.svg"/></a>
-          <nav class="navegacion">
-            <ul>
-              <li><a href="#">bases</a></li>
-              <li><a href="#">premios</a></li>
-              <li><a href="#">ganadores</a></li>
-              <li><a href="#">contacto</a></li>
+<!--   <header class="menuRwd">
+        <div class="ed-item base-100">
+          <nav>
+            <div class="nav-handle-container">
+              <div class="nav-handle"></div>
+            </div>
+            <ul id="nav">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
             </ul>
           </nav>
         </div>
+  </header> -->
+    <header class="normal">
+
+      <div class="ed-container">
+          <div class="ed-item base-100 tablet-100 web-50 absoluto">
+          <div class="logo"><img src="img/logo.svg"/></div>
+          </div>
+
+          <div class="ed-item base-100 tablet-100 web-50" >
+            <label for="show-menu" class="show-menu">Menu</label>
+            <input type="checkbox" id="show-menu" role="button">
+
+            <ul id="menu">
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Bases</a></li>
+              <li><a href="#">Premios</a></li>
+              <li><a href="#">Ganadores</a></li>
+              <li><a href="#">Contacto</a></li>
+            </ul>
+          </div>
+
       </div>
     </header>
 	
-    <section id="interior" class="ed-container">
+    <section id="interior-selec" class="ed-container">
         <h1 class="centrar">Selecciona tu campaña</h1>
-        <div class="ed-item base-100">			
-				<?php
+        <div class="ed-item base-100 tablet-50 web-50">
+            <div class="item__foto__campana">
+              <a href="#"><img src="http://fpoimg.com/1920x1080?text=Preview"/></a>
+            </div>
+<!--             <div class="item__foto__campana">
+              <a href="#"><img src="img/teleton.jpg"/></a>
+            </div>   -->			
+				<?php/*
 					while($reg=mysqli_fetch_array($registrosCampana)){
 						$id_campana = $reg['id_campana'];	
-						$foto_campana = $reg['foto_campana'];		
-							echo "<div class=\"item--campana\" style=\"float:none !important; margin:0 auto;\"><a href=\"elije-exhibicion.php?id_campana=",urlencode($id_campana),"  \"><img src=\"img/$foto_campana\"/></a></div>";							
+						$foto_campana = $reg['foto_campana'];	
+							echo "<div class=\"item--campana\" ><a href=\"elije-exhibicion.php?id_campana=",urlencode($id_campana),"  \"><img src=\"img/$foto_campana\"/></a></div>";							
 							//echo "<li>Nombre: $nombre  Modelo: $modelo  SKU: <a href=\"elim-calefaccion.php?id_send=",urlencode($id_producto)," \">$sku</a> </li>";
-						}
-					?>              
+						}*/
+					?>             
 		</div>
+        <div class="ed-item base-100 tablet-50 web-50">
+            <div class="item__foto__campana">
+              <a href="#"><img src="http://fpoimg.com/1920x1080?text=Preview"/></a>
+            </div>
+<!--             <div class="item__foto__campana">
+              <a href="#"><img src="img/teleton.jpg"/></a>
+            </div>   -->      
+        <?php/*
+          while($reg=mysqli_fetch_array($registrosCampana)){
+            $id_campana = $reg['id_campana']; 
+            $foto_campana = $reg['foto_campana']; 
+              echo "<div class=\"item--campana\" ><a href=\"elije-exhibicion.php?id_campana=",urlencode($id_campana),"  \"><img src=\"img/$foto_campana\"/></a></div>";             
+              //echo "<li>Nombre: $nombre  Modelo: $modelo  SKU: <a href=\"elim-calefaccion.php?id_send=",urlencode($id_producto)," \">$sku</a> </li>";
+            }*/
+          ?>             
+    </div>
     </section>
-    <footer class="ed-container total">
-      <div class="ed-item base-100"><img src="img/fot.png"/></div>
-    </footer>    
+<!--     <footer class="ed-container total">
+      <div class="ed-item base-100">
+        <img src="img/fot.png"/>
+        <p>Todos los derechos reservados</p>
+      </div>
+    </footer>  -->   
+    <footer>
+      <div class="ed-container total">
+          <div class="ed-item base-100">
+            <!-- <img src="img/fot.png"/> -->
+            <p>Todos los derechos reservados</p>
+          </div>
+      </div>
+    </footer> 
   </body>
 </html>
