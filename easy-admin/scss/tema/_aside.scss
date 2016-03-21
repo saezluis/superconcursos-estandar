@@ -39,8 +39,8 @@ aside{
 			input[type="submit"]{
 				border:none;
 			    padding: 6px 8px;
-			    color: #fff;
-			    background: #ed1c24;
+			    color: $blanco;
+			    background: $color-hover;
 			    font-size: 0.8em;
 			    text-align: center;
 			    width: 100%;
@@ -52,7 +52,8 @@ aside{
 			    text-transform: uppercase;
 			    cursor: pointer;
 			    &:hover{
-			    	background: $rojo-darks;
+			    	background: $color-button;
+			    	color: $nigga;
 			    }
 			}
 		}
@@ -62,7 +63,7 @@ aside{
 				border:none;
 			    padding: 6px 8px;
 			    color: #fff;
-			    background: #ed1c24;
+			    background: $color-hover;
 			    font-size: 0.7em;
 			    text-align: center;
 			    width: 100%;
@@ -74,7 +75,8 @@ aside{
 			    //text-transform: uppercase;
 			    cursor: pointer;
 			    &:hover{
-			    	background: $rojo-darks;
+			    	background: $color-button;
+			    	color: $nigga;
 			    }
 			}
 	}

@@ -46,7 +46,7 @@ session_start();
     <div class="ed-container">
       <div class="ed-item base-20">
         <aside>
-          <div class="logo"><img src="img/logo.png" alt=""></div>
+          <div class="logo"><img src="img/logo.svg" alt=""></div>
           <div class="aqui-les-va">
             <h1>Campañas 2016</h1>
 			

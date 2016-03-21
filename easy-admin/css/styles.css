@@ -2561,7 +2561,7 @@ form#login {
     -moz-border-radius: 4px;
     -webkit-border-radius: 4px;
     -o-border-radius: 4px;
-    border: 1px solid #ed1c24; }
+    border: 1px solid #ECEBEB; }
     @media screen and (min-width: 768px) {
       form#login input[type="text"], form#login input[type="password"] {
         width: 65%; } }
@@ -2576,8 +2576,8 @@ form#login {
     -webkit-appearance: none;
     padding: 8px;
     margin-top: 1em;
-    background: #ed1c24;
-    color: #fff;
+    background: #EFEFEF;
+    color: #000;
     text-align: center;
     font-size: 1em;
     -moz-border-radius: 4px;
@@ -2635,7 +2635,7 @@ header.int {
         margin-right: 1em;
         border-radius: 50%;
         margin: 0 auto;
-        border: 2px solid #ed1c24; }
+        border: 2px solid #6a6b6c; }
         header.int .items-header .custion .profile img {
           width: 100%; }
       header.int .items-header .custion p.nombre {
@@ -2647,7 +2647,7 @@ header.int {
       header.int .items-header .custion a.rejected {
         padding: 2px 8px;
         color: #fff;
-        background: #ed1c24;
+        background: #6a6b6c;
         font-size: 0.8em;
         text-align: center;
         width: 60%;
@@ -2657,7 +2657,8 @@ header.int {
         transition: all .3s;
         border-radius: 4px; }
         header.int .items-header .custion a.rejected:hover {
-          background: #89030D; }
+          background: #EFEFEF;
+          color: #000; }
 
 footer {
   width: 100%;
@@ -2739,7 +2740,7 @@ article {
     padding: 15px; }
   .content-caja-mensajes form.message .enviar {
     border: none;
-    background: #ed1c24;
+    background: #6a6b6c;
     text-align: center;
     padding: 7px 14px;
     color: #fff;
@@ -2747,7 +2748,8 @@ article {
     cursor: pointer;
     border-radius: 4px; }
     .content-caja-mensajes form.message .enviar:hover {
-      background: #89030D; }
+      background: #EFEFEF;
+      color: #000; }
 
 .content h2 {
   color: #ccc;
@@ -2832,7 +2834,7 @@ aside {
       border: none;
       padding: 6px 8px;
       color: #fff;
-      background: #ed1c24;
+      background: #6a6b6c;
       font-size: 0.8em;
       text-align: center;
       width: 100%;
@@ -2844,12 +2846,13 @@ aside {
       text-transform: uppercase;
       cursor: pointer; }
       aside div.init_inicio form input[type="submit"]:hover {
-        background: #89030D; }
+        background: #EFEFEF;
+        color: #000; }
   aside .btns_selectores input[type="submit"] {
     border: none;
     padding: 6px 8px;
     color: #fff;
-    background: #ed1c24;
+    background: #6a6b6c;
     font-size: 0.7em;
     text-align: center;
     width: 100%;
@@ -2860,4 +2863,5 @@ aside {
     border-radius: 4px;
     cursor: pointer; }
     aside .btns_selectores input[type="submit"]:hover {
-      background: #89030D; }
+      background: #EFEFEF;
+      color: #000; }

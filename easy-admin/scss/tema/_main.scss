@@ -95,7 +95,7 @@ article{
 		}
 		.enviar{
 			border:none;
-			background: $rojo;
+			background: $color-hover;
 			text-align: center;
 			padding: 7px 14px;
 			color: $blanco;
@@ -103,7 +103,8 @@ article{
 			cursor: pointer;
 			border-radius: 4px;
 			&:hover{
-				background: $rojo-darks;
+		    	background: $color-button;
+		    	color: $nigga;
 			}
 		}
 	}

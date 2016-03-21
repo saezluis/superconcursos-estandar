@@ -19,7 +19,7 @@ form#login{
 		-moz-border-radius: 4px;
 		-webkit-border-radius: 4px;
 		-o-border-radius: 4px;
-		border: 1px solid $rojo;
+		border: 1px solid $gray-border ;
 		@include desde (tablet){
 			width: 65%;
 		}
@@ -36,8 +36,8 @@ form#login{
 		-webkit-appearance: none;
 		padding: 8px;
 		margin-top: 1em;
-		background:  $rojo ;
-		color:$blanco;
+		background:  $color-button ;
+		color:$nigga;
 		text-align: center;
 		font-size: 1em;
 		-moz-border-radius: 4px;
@@ -106,7 +106,7 @@ header.int{
 						margin-right: 1em;
 						border-radius: 50%;
 						margin:0 auto;
-						border: 2px solid $rojo;
+						border: 2px solid $color-hover;
 						img{
 							width: 100%;
 						}
@@ -122,7 +122,7 @@ header.int{
 					a.rejected{
 						padding: 2px 8px;
 						color: $blanco;
-						background: $rojo;
+						background: $color-hover;
 						font-size: 0.8em;
 						text-align: center;
 					    width: 60%;
@@ -132,7 +132,8 @@ header.int{
 					    transition: all .3s;
 					    border-radius: 4px;
 					    &:hover{
-					    	background: $rojo-darks;
+					    	background: $color-button;
+					    	color: $nigga;
 					    }
 					}
 				}
