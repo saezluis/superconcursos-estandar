@@ -258,13 +258,13 @@ section#interior{
 		width: 100%;
 		margin: 0 auto;
 		@include desde (tablet){
-			width: 100%;
+			width: 45%;
 		}
 		@include desde (web){
-			width: 100%;
+			width: 45%;
 		}
 		@include desde (hd){
-			width: 100%;
+			width: 40%;
 		}
 		input[type="text"],
 		input[type="password"],

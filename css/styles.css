@@ -3076,13 +3076,13 @@ section#interior {
     margin: 0 auto; }
     @media screen and (min-width: 768px) {
       section#interior form.form_login {
-        width: 100%; } }
+        width: 45%; } }
     @media screen and (min-width: 1024px) {
       section#interior form.form_login {
-        width: 100%; } }
+        width: 45%; } }
     @media screen and (min-width: 1400px) {
       section#interior form.form_login {
-        width: 100%; } }
+        width: 40%; } }
     section#interior form.form_login input[type="text"],
     section#interior form.form_login input[type="password"],
     section#interior form.form_login input[type="submit"] {
