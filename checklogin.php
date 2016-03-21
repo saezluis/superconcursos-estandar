@@ -9,7 +9,7 @@ session_start();
 	 $host_db = "localhost";
 	 $user_db = "root";
 	 $pass_db = "123";
-	 $db_name = "super";
+	 $db_name = "superdos";
 	 $tbl_name = "cuenta";
 
 		// Connect to server and select databse.

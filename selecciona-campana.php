@@ -91,43 +91,49 @@ exit;
         <h1 class="centrar">Selecciona tu campaña</h1>
         <div class="ed-item base-100 tablet-50 web-50">
             <div class="item__foto__campana">
-              <a href="#"><img src="http://fpoimg.com/1920x1080?text=Preview"/></a>
+              <a href="elije-exhibicion.php"><img src="http://fpoimg.com/1920x1080?text=Preview"/></a>
             </div>
-<!--             <div class="item__foto__campana">
+			<!--             
+			<div class="item__foto__campana">
               <a href="#"><img src="img/teleton.jpg"/></a>
-            </div>   -->			
-				<?php/*
+            </div>   			
+					php-inicio
 					while($reg=mysqli_fetch_array($registrosCampana)){
 						$id_campana = $reg['id_campana'];	
 						$foto_campana = $reg['foto_campana'];	
 							echo "<div class=\"item--campana\" ><a href=\"elije-exhibicion.php?id_campana=",urlencode($id_campana),"  \"><img src=\"img/$foto_campana\"/></a></div>";							
 							//echo "<li>Nombre: $nombre  Modelo: $modelo  SKU: <a href=\"elim-calefaccion.php?id_send=",urlencode($id_producto)," \">$sku</a> </li>";
-						}*/
-					?>             
+						}
+					php-fin             
+			-->
 		</div>
         <div class="ed-item base-100 tablet-50 web-50">
             <div class="item__foto__campana">
-              <a href="#"><img src="http://fpoimg.com/1920x1080?text=Preview"/></a>
+              <a href="elije-exhibicion.php"><img src="http://fpoimg.com/1920x1080?text=Preview"/></a>
             </div>
-<!--             <div class="item__foto__campana">
+			<!--        
+			<div class="item__foto__campana">
               <a href="#"><img src="img/teleton.jpg"/></a>
-            </div>   -->      
-        <?php/*
-          while($reg=mysqli_fetch_array($registrosCampana)){
+            </div>
+			php-inicio
+			while($reg=mysqli_fetch_array($registrosCampana)){
             $id_campana = $reg['id_campana']; 
             $foto_campana = $reg['foto_campana']; 
               echo "<div class=\"item--campana\" ><a href=\"elije-exhibicion.php?id_campana=",urlencode($id_campana),"  \"><img src=\"img/$foto_campana\"/></a></div>";             
               //echo "<li>Nombre: $nombre  Modelo: $modelo  SKU: <a href=\"elim-calefaccion.php?id_send=",urlencode($id_producto)," \">$sku</a> </li>";
             }*/
-          ?>             
+			php-fin
+			-->
     </div>
     </section>
-<!--     <footer class="ed-container total">
+	<!--     
+	<footer class="ed-container total">
       <div class="ed-item base-100">
         <img src="img/fot.png"/>
         <p>Todos los derechos reservados</p>
       </div>
-    </footer>  -->   
+    </footer>  
+	-->   
     <footer>
       <div class="ed-container total">
           <div class="ed-item base-100">
