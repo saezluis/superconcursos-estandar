@@ -50,24 +50,38 @@ exit;
 	
     ?>
     <header class="normal">
+
       <div class="ed-container">
-        <div class="ed-item base-100 absoluto"><a href="index.html"><img src="img/logo.svg"/></a>
-          <nav class="navegacion">
-            <ul>
-              <li><a href="#">bases</a></li>
-              <li><a href="#">premios</a></li>
-              <li><a href="#">ganadores</a></li>
-              <li><a href="#">contacto</a></li>
+          <div class="ed-item base-100 tablet-100 web-50 absoluto">
+          <div class="logo"><img src="img/logo.svg"/></div>
+          </div>
+
+          <div class="ed-item base-100 tablet-100 web-50" >
+            <label for="show-menu" class="show-menu">Menu</label>
+            <input type="checkbox" id="show-menu" role="button">
+
+            <ul id="menu">
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Bases</a></li>
+              <li><a href="#">Premios</a></li>
+              <li><a href="#">Ganadores</a></li>
+              <li><a href="#">Contacto</a></li>
             </ul>
-          </nav>
-        </div>
+          </div>
+
       </div>
     </header>
 	
 	<section id="interior" class="ed-container">
 		<div class="ed-item base-100">
 		<h1 class="centrar">Elige exhibición</h1>
-			<div class="ed-item base-100">
+		 <form id="seleccion" method="post" action="">
+			<select class="style-select" name="sala_seleccionada" onchange="this.form.submit()">
+				<option>Elije una exhibición</option>
+			</select>
+		 </form>
+
+<!-- 			<div class="ed-item base-100">
 				<form id="seleccion" method="post" action="sala.php">
 					<?php
 						echo "<select name=\"id_ex_send\" class=\"green\" onchange=\" this.form.submit() \">"; //+this.options[this.selectedIndex].value
@@ -80,11 +94,16 @@ exit;
 						echo "</select>";	       
 					?>  		
 				</form>
-			</div>
+			</div> -->
 		</div>
     </section>
-	<footer class="ed-container total">
-      <div class="ed-item base-100"><img src="img/fot.png"/></div>
-    </footer>
+    <footer>
+      <div class="ed-container total">
+          <div class="ed-item base-100">
+            <!-- <img src="img/fot.png"/> -->
+            <p>Todos los derechos reservados</p>
+          </div>
+      </div>
+    </footer> 
   </body>
 </html>
